@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "G-OnRamp workflow with JBrowse", 
+    "name": "G-OnRamp workflow with JBrowse (imported from API)", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -192,7 +192,7 @@
         }, 
         "5": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.2.00", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.1.08", 
             "id": 5, 
             "input_connections": {
                 "input_file": {
@@ -224,15 +224,15 @@
             }, 
             "post_job_actions": {}, 
             "tool_errors": null, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.2.00", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.1.08", 
             "tool_shed_repository": {
-                "changeset_revision": "7538e2bfcd41", 
+                "changeset_revision": "3034ce97dd33", 
                 "name": "ncbi_blast_plus", 
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
             "tool_state": "{\"__page__\": 0, \"mask_data_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"title\": \"\\\"\\\"\", \"dbtype\": \"\\\"nucl\\\"\", \"__rerun_remap_job_id__\": null, \"hash_index\": \"\\\"true\\\"\", \"tax\": \"{\\\"__current_case__\\\": 0, \\\"taxselect\\\": \\\"\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"parse_seqids\": \"\\\"false\\\"\"}", 
-            "tool_version": "0.2.00", 
+            "tool_version": "0.1.08", 
             "type": "tool", 
             "uuid": "9dadf284-1814-450f-b059-d2aa0f96409c", 
             "workflow_outputs": [
@@ -576,7 +576,7 @@
         }, 
         "11": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.2.00", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.1.08", 
             "id": 11, 
             "input_connections": {
                 "db_opts|histdb": {
@@ -607,27 +607,27 @@
                 }
             ], 
             "position": {
-                "left": 795.5, 
-                "top": 506
+                "left": 863, 
+                "top": 530
             }, 
             "post_job_actions": {}, 
             "tool_errors": null, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.2.00", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.1.08", 
             "tool_shed_repository": {
-                "changeset_revision": "7538e2bfcd41", 
+                "changeset_revision": "3034ce97dd33", 
                 "name": "ncbi_blast_plus", 
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"evalue_cutoff\": \"\\\"0.001\\\"\", \"__page__\": 0, \"adv_opts\": \"{\\\"adv_opts_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"blast_type\": \"\\\"tblastn\\\"\", \"db_opts\": \"{\\\"db_opts_selector\\\": \\\"histdb\\\", \\\"subject\\\": \\\"\\\", \\\"histdb\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"database\\\": \\\"\\\"}\", \"output\": \"{\\\"out_format\\\": \\\"5\\\", \\\"__current_case__\\\": 3}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
-            "tool_version": "0.2.00", 
+            "tool_state": "{\"evalue_cutoff\": \"\\\"0.001\\\"\", \"__page__\": 0, \"adv_opts\": \"{\\\"adv_opts_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"blast_type\": \"\\\"tblastn\\\"\", \"db_opts\": \"{\\\"db_opts_selector\\\": \\\"histdb\\\", \\\"subject\\\": \\\"\\\", \\\"histdb\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"database\\\": \\\"\\\"}\", \"output\": \"{\\\"out_format\\\": \\\"ext\\\", \\\"__current_case__\\\": 1}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.1.08", 
             "type": "tool", 
-            "uuid": "fb666aec-8276-4422-81a4-215b082d8469", 
+            "uuid": "68805d83-6282-42e3-b500-e171c603cff5", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output1", 
-                    "uuid": "721185d4-a2a1-4d23-80da-25481b9b14eb"
+                    "uuid": "7a35316e-9769-4bda-81bd-054529222782"
                 }
             ]
         }, 
@@ -671,7 +671,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/bamtobigwig/bam_to_bigwig/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "61f39c77b13d", 
+                "changeset_revision": "2e812b4f91ce", 
                 "name": "bamtobigwig", 
                 "owner": "yating-l", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -959,7 +959,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/jbrowsearchivecreator/jbrowse_hub/1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "ac83821b0e06", 
+                "changeset_revision": "eda851e52060", 
                 "name": "jbrowsearchivecreator", 
                 "owner": "yating-l", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -977,5 +977,5 @@
             ]
         }
     }, 
-    "uuid": "dc439abc-898c-436d-ab59-a848198686f8"
+    "uuid": "4a17a6e8-dd49-443f-a42f-a5a91a44f83c"
 }
