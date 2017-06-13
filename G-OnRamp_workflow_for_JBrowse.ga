@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "G-OnRamp workflow with JBrowse (imported from API)", 
+    "name": "G-OnRamp workflow for JBrowse", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -27,12 +27,12 @@
             "tool_state": "{\"name\": \"Genome sequence\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "17e463fc-0f0e-4e72-889d-b775b9ce9ea0", 
+            "uuid": "8289cada-4661-435e-b441-dc3c578e8515", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "63415a32-b590-40d8-b17e-9b890e0199a9"
+                    "uuid": "fb334699-2676-4bd9-abe2-b502818965d0"
                 }
             ]
         }, 
@@ -59,12 +59,12 @@
             "tool_state": "{\"name\": \"Protein sequence\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "848c8523-1d82-4079-856a-a1e2d248e1e6", 
+            "uuid": "1ffcdd81-6c5c-4d21-92c4-a37e27752bd4", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "ff8c09f9-abfe-4389-bc96-8bc67004338a"
+                    "uuid": "0a48ffdb-76c8-4fa6-a714-40dc7b46d2fe"
                 }
             ]
         }, 
@@ -91,12 +91,12 @@
             "tool_state": "{\"name\": \"RNA-seq forward\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "0e236ef0-ada5-4b3a-ab20-048834a3c4f6", 
+            "uuid": "35df0714-5939-47f7-a7e8-4865a50fba48", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "6ae84a05-5986-4fc8-92b3-c3ad3f67487f"
+                    "uuid": "04c592db-4c86-4dbe-872e-a58173d1f6a3"
                 }
             ]
         }, 
@@ -123,12 +123,12 @@
             "tool_state": "{\"name\": \"RNA-seq reverse\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "2fe427fc-29a7-4ca9-80ab-4deafba5433f", 
+            "uuid": "3f26e4fa-d3db-4de8-a654-f7d94a5b86c5", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "89211f0e-0e88-4c61-9535-e30ea736a95b"
+                    "uuid": "435d3ad4-22c8-44e1-8c84-8fea769bd714"
                 }
             ]
         }, 
@@ -176,17 +176,17 @@
             "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "2d2ef1f0-8b47-4322-bc97-cfd1fac35023", 
+            "uuid": "be5dc740-bc7a-4386-a544-2d7b379d8562", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "ec9aa745-6d38-43d3-a75d-db32566378b0"
+                    "uuid": "a7b584ca-9010-42fd-b558-144901a14c48"
                 }, 
                 {
                     "label": null, 
                     "output_name": "index", 
-                    "uuid": "eab8eaa5-31eb-4861-8cad-b9a981d7cda1"
+                    "uuid": "0f4c74e4-d860-4c63-aaad-6e8262f99484"
                 }
             ]
         }, 
@@ -234,12 +234,12 @@
             "tool_state": "{\"__page__\": 0, \"mask_data_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"title\": \"\\\"\\\"\", \"dbtype\": \"\\\"nucl\\\"\", \"__rerun_remap_job_id__\": null, \"hash_index\": \"\\\"true\\\"\", \"tax\": \"{\\\"__current_case__\\\": 0, \\\"taxselect\\\": \\\"\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"parse_seqids\": \"\\\"false\\\"\"}", 
             "tool_version": "0.1.08", 
             "type": "tool", 
-            "uuid": "9dadf284-1814-450f-b059-d2aa0f96409c", 
+            "uuid": "635cade6-7933-416c-b551-773a82770f44", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "outfile", 
-                    "uuid": "5452a95e-2ac4-4ad7-9ac8-434cbcf4c9d6"
+                    "uuid": "cc586c53-bef8-4cff-bc18-cc0ef2a9edfb"
                 }
             ]
         }, 
@@ -283,12 +283,12 @@
             "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "49828fab-b564-400e-a0ef-10594887dc16", 
+            "uuid": "8618d713-7983-4bde-8c09-9a61d9e8c931", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "7036f16c-c6aa-4452-b8d1-b38256d9abcb"
+                    "uuid": "1884b39c-ae42-4187-93d5-5767a79d9559"
                 }
             ]
         }, 
@@ -356,32 +356,32 @@
             "tool_state": "{\"alignment_options\": \"{\\\"__current_case__\\\": 0, \\\"alignment_options_selector\\\": \\\"defaults\\\"}\", \"max_seeds\": \"\\\"\\\"\", \"input_format\": \"{\\\"paired\\\": {\\\"aligned_file\\\": \\\"false\\\", \\\"unaligned_file\\\": \\\"false\\\", \\\"paired_end_options\\\": {\\\"paired_end_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}, \\\"paired_selector\\\": \\\"paired\\\", \\\"reads_f\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"reads_r\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, \\\"input_format_selector\\\": \\\"fastq\\\", \\\"__current_case__\\\": 1}\", \"__page__\": 0, \"max_primary\": \"\\\"5\\\"\", \"scoring_options\": \"{\\\"scoring_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"reference_genome\": \"{\\\"reference_genome_source\\\": \\\"history\\\", \\\"history_item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1}\", \"spliced_options\": \"{\\\"spliced_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"paired_options\": \"{\\\"paired_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"input_options\": \"{\\\"input_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"secondary\": \"\\\"false\\\"\"}", 
             "tool_version": "2.0.5.1", 
             "type": "tool", 
-            "uuid": "bb238a1d-5e9e-4a87-a90b-4b1fc34ce9f2", 
+            "uuid": "2c16062c-b115-4eb4-a51d-c7b088f930f0", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_alignments", 
-                    "uuid": "acbe030a-e635-43ae-a986-68b07eca1b3c"
+                    "uuid": "837c0ddb-29cc-4a63-8e87-2af734509728"
                 }, 
                 {
                     "label": null, 
                     "output_name": "output_unaligned_reads_l", 
-                    "uuid": "238afeb9-49f0-413a-8b60-35bd04c8a5b5"
+                    "uuid": "ee187eb6-9269-4846-ba94-dbbcedb98035"
                 }, 
                 {
                     "label": null, 
                     "output_name": "output_aligned_reads_l", 
-                    "uuid": "36437900-655a-4263-b5aa-2e59e0bc263d"
+                    "uuid": "59e8df9d-3ebd-4b34-b485-329f56b9c57d"
                 }, 
                 {
                     "label": null, 
                     "output_name": "output_unaligned_reads_r", 
-                    "uuid": "def72161-88ec-4093-b495-90baffc21d25"
+                    "uuid": "b9f8e2ab-d57f-4d28-a393-0372500cdea4"
                 }, 
                 {
                     "label": null, 
                     "output_name": "output_aligned_reads_r", 
-                    "uuid": "45fc1200-d1f2-43d0-83cc-0e6ce4fa19fe"
+                    "uuid": "fdf1e98a-67b2-41e7-9d67-ca4cc81e1b71"
                 }
             ]
         }, 
@@ -396,6 +396,10 @@
                 }
             }, 
             "inputs": [
+                {
+                    "description": "runtime parameter for tool Augustus", 
+                    "name": "organism"
+                }, 
                 {
                     "description": "runtime parameter for tool Augustus", 
                     "name": "input_genome"
@@ -441,15 +445,15 @@
                 "owner": "bgruening", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"input_genome\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"outputs\": \"[\\\"protein\\\", \\\"codingseq\\\", \\\"cds\\\"]\", \"__rerun_remap_job_id__\": null, \"organism\": \"\\\"fly\\\"\", \"genemodel\": \"\\\"complete\\\"\", \"utr\": \"\\\"false\\\"\", \"noInFrameStop\": \"\\\"false\\\"\", \"singlestrand\": \"\\\"false\\\"\", \"gff\": \"\\\"true\\\"\", \"strand\": \"\\\"both\\\"\"}", 
+            "tool_state": "{\"__page__\": 0, \"input_genome\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"outputs\": \"[\\\"protein\\\", \\\"codingseq\\\", \\\"cds\\\"]\", \"__rerun_remap_job_id__\": null, \"organism\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"genemodel\": \"\\\"complete\\\"\", \"utr\": \"\\\"false\\\"\", \"noInFrameStop\": \"\\\"false\\\"\", \"singlestrand\": \"\\\"false\\\"\", \"gff\": \"\\\"true\\\"\", \"strand\": \"\\\"both\\\"\"}", 
             "tool_version": "3.1.0", 
             "type": "tool", 
-            "uuid": "3d2d991b-a1d7-44c3-9288-282ce434363f", 
+            "uuid": "60165fc2-ec3c-4b33-8924-902ee0c5da2b", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "d62f36ff-fb90-4beb-857f-00b39bb1e4dc"
+                    "uuid": "f23a6c8c-a216-4ca9-90ff-b0609ddeb20b"
                 }
             ]
         }, 
@@ -497,12 +501,12 @@
             "tool_state": "{\"__page__\": 0, \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"trained_specie\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "4.0", 
             "type": "tool", 
-            "uuid": "edcdcbf9-d47a-4c6e-a17e-c931f9109ff7", 
+            "uuid": "553bf6c4-8bc3-422c-902a-5307bb12ae5d", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "2195f78b-4153-4fc8-a63b-86c224786708"
+                    "uuid": "74b53aee-eee8-4b7e-b6bd-7826c4373537"
                 }
             ]
         }, 
@@ -520,6 +524,10 @@
                 {
                     "description": "runtime parameter for tool Semi-HMM-based Nucleic Acid Parser (SNAP)", 
                     "name": "input1"
+                }, 
+                {
+                    "description": "runtime parameter for tool Semi-HMM-based Nucleic Acid Parser (SNAP)", 
+                    "name": "organism"
                 }
             ], 
             "label": null, 
@@ -562,15 +570,15 @@
                 "owner": "yating-l", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"settings\": \"{\\\"__current_case__\\\": 0, \\\"advanced\\\": \\\"simple\\\"}\", \"__rerun_remap_job_id__\": null, \"proteins\": \"\\\"\\\"\", \"transcripts\": \"\\\"\\\"\", \"organism\": \"\\\"D.melanogaster.hmm\\\"\"}", 
+            "tool_state": "{\"__page__\": 0, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"settings\": \"{\\\"__current_case__\\\": 0, \\\"advanced\\\": \\\"simple\\\"}\", \"__rerun_remap_job_id__\": null, \"proteins\": \"\\\"\\\"\", \"transcripts\": \"\\\"\\\"\", \"organism\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
-            "uuid": "301a4e10-24a2-49ee-a87f-4f0f5a94a742", 
+            "uuid": "9dde3b38-d00b-4e67-b349-473cb7ef6193", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output1", 
-                    "uuid": "710891f0-8cf8-473b-8b71-5055e9cd25b9"
+                    "uuid": "5aba4b89-775e-46f3-b5d7-fe8614279345"
                 }
             ]
         }, 
@@ -619,15 +627,15 @@
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"evalue_cutoff\": \"\\\"0.001\\\"\", \"__page__\": 0, \"adv_opts\": \"{\\\"adv_opts_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"blast_type\": \"\\\"tblastn\\\"\", \"db_opts\": \"{\\\"db_opts_selector\\\": \\\"histdb\\\", \\\"subject\\\": \\\"\\\", \\\"histdb\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"database\\\": \\\"\\\"}\", \"output\": \"{\\\"out_format\\\": \\\"ext\\\", \\\"__current_case__\\\": 1}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_state": "{\"evalue_cutoff\": \"\\\"0.001\\\"\", \"__page__\": 0, \"adv_opts\": \"{\\\"adv_opts_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"blast_type\": \"\\\"tblastn\\\"\", \"db_opts\": \"{\\\"db_opts_selector\\\": \\\"histdb\\\", \\\"subject\\\": \\\"\\\", \\\"histdb\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"database\\\": \\\"\\\"}\", \"output\": \"{\\\"out_format\\\": \\\"5\\\", \\\"__current_case__\\\": 3}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "0.1.08", 
             "type": "tool", 
-            "uuid": "68805d83-6282-42e3-b500-e171c603cff5", 
+            "uuid": "71e077ed-7112-456e-ad02-f82c1ce6b393", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output1", 
-                    "uuid": "7a35316e-9769-4bda-81bd-054529222782"
+                    "uuid": "09943e57-0bd3-4b4f-8396-5c24eb3b5cb9"
                 }
             ]
         }, 
@@ -679,12 +687,12 @@
             "tool_state": "{\"input_reference_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"input_bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "cb5f5d98-66d7-4ac9-a586-15a9c275f6c7", 
+            "uuid": "c26f42fa-1410-49dc-b7b1-c2b72c122e5a", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_bigwig", 
-                    "uuid": "ffd90b74-a867-4e19-a6f2-d9edfadb0627"
+                    "uuid": "e5a842cb-3f07-4840-886b-47005e1f3f8e"
                 }
             ]
         }, 
@@ -738,12 +746,12 @@
             "tool_state": "{\"__page__\": 0, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"max_intron_length\": \"\\\"500000\\\"\", \"__rerun_remap_job_id__\": null, \"min_intron_length\": \"\\\"20\\\"\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"__current_case__\\\": 1}\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "98f92031-047c-4591-8a03-8d0cfc08c770", 
+            "uuid": "f1a3bf0d-e7f0-4c31-811e-2cea4dcd81ec", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "fixed_output", 
-                    "uuid": "252dff6b-0515-4989-b880-1ce7af352647"
+                    "uuid": "91a270ff-16ae-4568-9b71-2823666b2b45"
                 }
             ]
         }, 
@@ -863,27 +871,27 @@
             "tool_state": "{\"input_bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"option_set\": \"{\\\"options\\\": \\\"default\\\", \\\"__current_case__\\\": 0}\", \"guide\": \"{\\\"use_guide\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"__page__\": 0}", 
             "tool_version": "1.3.3", 
             "type": "tool", 
-            "uuid": "2f744212-76ed-47f4-83c7-2b1ad2bc0c1f", 
+            "uuid": "b1b102f6-42bd-42d1-9b4f-f37e89948027", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_gtf", 
-                    "uuid": "699c96ff-9e42-4c2e-a693-ae026f7d1281"
+                    "uuid": "1c93d682-ca5a-4aee-b7c1-cf2875bbda35"
                 }, 
                 {
                     "label": null, 
                     "output_name": "transcript_counts", 
-                    "uuid": "bc6256cc-c9b3-4463-8a11-fdf3765e82e1"
+                    "uuid": "b58c770e-26a7-490f-84ce-f2b9b34dba09"
                 }, 
                 {
                     "label": null, 
                     "output_name": "gene_counts", 
-                    "uuid": "b2cc017b-ee56-49d1-958c-15201a2b2eb7"
+                    "uuid": "62c38cfb-7a43-4a83-bc34-938bc0d80a90"
                 }, 
                 {
                     "label": null, 
                     "output_name": "legend", 
-                    "uuid": "057edf38-ab61-4892-8e1f-3f8c7f520ffd"
+                    "uuid": "0d60b617-2641-442d-9389-663b669e0bc6"
                 }
             ]
         }, 
@@ -964,18 +972,18 @@
                 "owner": "yating-l", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"GALAXY_URL\": \"\\\"http://192.168.56.11\\\"\", \"__page__\": 0, \"group\": \"[{\\\"__index__\\\": 0, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#daa520\\\", \\\"bedChoice\\\": {\\\"BED_simple_repeats\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_simple_repeats_option\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"label\\\": \\\"Simple repeats\\\"}}], \\\"group_name\\\": \\\"Simple repeats\\\"}, {\\\"__index__\\\": 1, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"blastxml\\\", \\\"BlastXML\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"label\\\": \\\"Blast Alignment\\\"}}], \\\"group_name\\\": \\\"Homology\\\"}, {\\\"__index__\\\": 2, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bam\\\", \\\"BAM\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"label\\\": \\\"Sequence Alignment\\\"}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gtf\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"GTF\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 5, \\\"label\\\": \\\"Assembled Transcripts\\\"}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bigwig\\\", \\\"label\\\": \\\"Sequence Coverage\\\", \\\"pos_color\\\": \\\"#ffa600\\\", \\\"__current_case__\\\": 3, \\\"BIGWIG\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"neg_color\\\": \\\"#005eff\\\"}}, {\\\"__index__\\\": 3, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_splice_junctions_option\\\", \\\"BED_splice_junctions\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2}, \\\"__current_case__\\\": 1, \\\"label\\\": \\\"Splice junctions\\\"}}], \\\"group_name\\\": \\\"RNA-Seq\\\"}, {\\\"__index__\\\": 3, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"label\\\": \\\"Augustus\\\", \\\"track_color\\\": \\\"#9bbb59\\\", \\\"__current_case__\\\": 4, \\\"gff3Choice\\\": {\\\"GFF3_transcript\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"gff3_select\\\": \\\"gff3_transcript\\\"}}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"label\\\": \\\"GlimmerHMM\\\", \\\"track_color\\\": \\\"#9bbb59\\\", \\\"__current_case__\\\": 4, \\\"gff3Choice\\\": {\\\"GFF3_mrna\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"gff3_select\\\": \\\"gff3_mrna\\\"}}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"label\\\": \\\"SNAP\\\", \\\"track_color\\\": \\\"#9bbb59\\\", \\\"__current_case__\\\": 4, \\\"gff3Choice\\\": {\\\"GFF3_mrna\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"gff3_select\\\": \\\"gff3_mrna\\\"}}}], \\\"group_name\\\": \\\"Gene prediction\\\"}]\", \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"genome_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_state": "{\"GALAXY_URL\": \"\\\"http://52.206.29.242\\\"\", \"__page__\": 0, \"group\": \"[{\\\"__index__\\\": 0, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#daa520\\\", \\\"bedChoice\\\": {\\\"BED_simple_repeats\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_simple_repeats_option\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"label\\\": \\\"Simple repeats\\\"}}], \\\"group_name\\\": \\\"Simple repeats\\\"}, {\\\"__index__\\\": 1, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"blastxml\\\", \\\"BlastXML\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"label\\\": \\\"Blast Alignment\\\"}}], \\\"group_name\\\": \\\"Homology\\\"}, {\\\"__index__\\\": 2, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bam\\\", \\\"BAM\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"label\\\": \\\"Sequence Alignment\\\"}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gtf\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"GTF\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 5, \\\"label\\\": \\\"Assembled Transcripts\\\"}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bigwig\\\", \\\"label\\\": \\\"Sequence Coverage\\\", \\\"pos_color\\\": \\\"#ffa600\\\", \\\"__current_case__\\\": 3, \\\"BIGWIG\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"neg_color\\\": \\\"#005eff\\\"}}, {\\\"__index__\\\": 3, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_splice_junctions_option\\\", \\\"BED_splice_junctions\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2}, \\\"__current_case__\\\": 1, \\\"label\\\": \\\"Splice junctions\\\"}}], \\\"group_name\\\": \\\"RNA-Seq\\\"}, {\\\"__index__\\\": 3, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"label\\\": \\\"Augustus\\\", \\\"track_color\\\": \\\"#9bbb59\\\", \\\"__current_case__\\\": 4, \\\"gff3Choice\\\": {\\\"GFF3_transcript\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"gff3_select\\\": \\\"gff3_transcript\\\"}}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"label\\\": \\\"GlimmerHMM\\\", \\\"track_color\\\": \\\"#9bbb59\\\", \\\"__current_case__\\\": 4, \\\"gff3Choice\\\": {\\\"GFF3_mrna\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"gff3_select\\\": \\\"gff3_mrna\\\"}}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"label\\\": \\\"SNAP\\\", \\\"track_color\\\": \\\"#9bbb59\\\", \\\"__current_case__\\\": 4, \\\"gff3Choice\\\": {\\\"GFF3_mrna\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"gff3_select\\\": \\\"gff3_mrna\\\"}}}], \\\"group_name\\\": \\\"Gene prediction\\\"}]\", \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"genome_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
-            "uuid": "c8e6b2a7-0ec3-4f2a-8539-24b646d3eb82", 
+            "uuid": "f2e84142-393c-4a2a-8453-0d10682e3e0f", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "b4d96acb-7dca-431c-b144-21a55bbdf029"
+                    "uuid": "73ea6eb4-afcd-4489-b0b8-6c74502163e6"
                 }
             ]
         }
     }, 
-    "uuid": "4a17a6e8-dd49-443f-a42f-a5a91a44f83c"
+    "uuid": "d214ddf6-60f9-4f32-80c6-62863a1709ee"
 }

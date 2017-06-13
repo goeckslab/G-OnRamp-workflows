@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "G-OnRamp", 
+    "name": "G-OnRamp workflow for UCSC", 
     "steps": {
         "0": {
             "annotation": "", 

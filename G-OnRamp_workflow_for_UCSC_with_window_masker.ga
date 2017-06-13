@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "G-OnRamp (blast 2.23, window masker, collection of rnaseq)", 
+    "name": "G-OnRamp workflow for UCSC with WindowMasker", 
     "steps": {
         "0": {
             "annotation": "", 
