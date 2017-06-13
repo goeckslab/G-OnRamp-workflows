@@ -611,7 +611,7 @@
             "outputs": [
                 {
                     "name": "output1", 
-                    "type": "tabular"
+                    "type": "blastxml"
                 }
             ], 
             "position": {
