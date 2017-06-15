@@ -12,38 +12,6 @@
             "inputs": [
                 {
                     "description": "", 
-                    "name": "mRNA genBank records"
-                }
-            ], 
-            "label": "mRNA GenBank records", 
-            "name": "Input dataset", 
-            "outputs": [], 
-            "position": {
-                "left": 223.5, 
-                "top": 408
-            }, 
-            "tool_errors": null, 
-            "tool_id": null, 
-            "tool_state": "{\"name\": \"mRNA genBank records\"}", 
-            "tool_version": null, 
-            "type": "data_input", 
-            "uuid": "7eb0aa62-4a58-4aee-86e1-3368addfa694", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output", 
-                    "uuid": "d1a228ea-9db3-4cbe-85ca-210dfe3f3689"
-                }
-            ]
-        }, 
-        "1": {
-            "annotation": "", 
-            "content_id": null, 
-            "id": 1, 
-            "input_connections": {}, 
-            "inputs": [
-                {
-                    "description": "", 
                     "name": "Genome sequence"
                 }
             ], 
@@ -51,8 +19,8 @@
             "name": "Input dataset", 
             "outputs": [], 
             "position": {
-                "left": 215, 
-                "top": 525
+                "left": 214, 
+                "top": 188
             }, 
             "tool_errors": null, 
             "tool_id": null, 
@@ -65,6 +33,38 @@
                     "label": null, 
                     "output_name": "output", 
                     "uuid": "735315a3-ac7a-41ea-b07a-ea5d98cfee88"
+                }
+            ]
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "mRNA genBank records"
+                }
+            ], 
+            "label": "mRNA GenBank records", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 213.5, 
+                "top": 510
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"mRNA genBank records\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "7eb0aa62-4a58-4aee-86e1-3368addfa694", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "d1a228ea-9db3-4cbe-85ca-210dfe3f3689"
                 }
             ]
         }, 
@@ -166,69 +166,11 @@
         }, 
         "5": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/rename_scaffolds/rename_scaffold/0.1.0", 
             "id": 5, 
             "input_connections": {
-                "gbfile": {
-                    "id": 0, 
-                    "output_name": "output"
-                }
-            }, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool gbToFasta", 
-                    "name": "gbfile"
-                }
-            ], 
-            "label": null, 
-            "name": "gbToFasta", 
-            "outputs": [
-                {
-                    "name": "outputfa", 
-                    "type": "fasta"
-                }, 
-                {
-                    "name": "outputcds", 
-                    "type": "tabular"
-                }
-            ], 
-            "position": {
-                "left": 382.5, 
-                "top": 284
-            }, 
-            "post_job_actions": {}, 
-            "tool_errors": null, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0", 
-            "tool_shed_repository": {
-                "changeset_revision": "b673449d111a", 
-                "name": "gbtofasta", 
-                "owner": "yating-l", 
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            }, 
-            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"cds\": \"\\\"yes\\\"\", \"gbfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
-            "tool_version": "1.0", 
-            "type": "tool", 
-            "uuid": "b7135884-8afa-4666-9a45-b2d01264f69a", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "outputcds", 
-                    "uuid": "b65e40d3-bc12-4bcd-872e-622fb7cd1057"
-                }, 
-                {
-                    "label": null, 
-                    "output_name": "outputfa", 
-                    "uuid": "96b5551d-6de0-4e44-b893-2ae2c2697584"
-                }
-            ]
-        }, 
-        "6": {
-            "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/rename_scaffolds/rename_scaffold/0.1.0", 
-            "id": 6, 
-            "input_connections": {
                 "input": {
-                    "id": 1, 
+                    "id": 0, 
                     "output_name": "output"
                 }
             }, 
@@ -280,70 +222,71 @@
                 }
             ]
         }, 
-        "7": {
+        "6": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/1.0", 
-            "id": 7, 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0", 
+            "id": 6, 
             "input_connections": {
-                "query": {
-                    "id": 5, 
-                    "output_name": "outputfa"
-                }, 
-                "reference_source|database": {
-                    "id": 6, 
+                "gbfile": {
+                    "id": 1, 
                     "output_name": "output"
                 }
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool UCSC BLAT Alignment Tool", 
-                    "name": "query"
-                }, 
-                {
-                    "description": "runtime parameter for tool UCSC BLAT Alignment Tool", 
-                    "name": "reference_source"
+                    "description": "runtime parameter for tool gbToFasta", 
+                    "name": "gbfile"
                 }
             ], 
             "label": null, 
-            "name": "UCSC BLAT Alignment Tool", 
+            "name": "gbToFasta", 
             "outputs": [
                 {
-                    "name": "output_sorted", 
-                    "type": "psl"
+                    "name": "outputfa", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "outputcds", 
+                    "type": "tabular"
                 }
             ], 
             "position": {
-                "left": 627.5, 
-                "top": 325
+                "left": 449.5, 
+                "top": 461
             }, 
             "post_job_actions": {}, 
             "tool_errors": null, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/1.0", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "545bc7831814", 
-                "name": "ucsc_blat", 
+                "changeset_revision": "b673449d111a", 
+                "name": "gbtofasta", 
                 "owner": "yating-l", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"query_type\": \"\\\"rnax\\\"\", \"__rerun_remap_job_id__\": null, \"database_type\": \"\\\"dnax\\\"\", \"noHead\": \"\\\"yes\\\"\", \"mask_type\": \"{\\\"mask\\\": \\\"lower\\\", \\\"__current_case__\\\": 0}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reference_source\": \"{\\\"reference_source_selector\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"database\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\"}", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"cds\": \"\\\"yes\\\"\", \"gbfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
-            "uuid": "ecd32e88-bb50-472f-9e83-1bba9cc71621", 
+            "uuid": "b7135884-8afa-4666-9a45-b2d01264f69a", 
             "workflow_outputs": [
                 {
                     "label": null, 
-                    "output_name": "output_sorted", 
-                    "uuid": "0fd967a5-e36c-4920-bd7a-f336eaa560e9"
+                    "output_name": "outputcds", 
+                    "uuid": "b65e40d3-bc12-4bcd-872e-622fb7cd1057"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "outputfa", 
+                    "uuid": "96b5551d-6de0-4e44-b893-2ae2c2697584"
                 }
             ]
         }, 
-        "8": {
+        "7": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.1.08", 
-            "id": 8, 
+            "id": 7, 
             "input_connections": {
                 "input_file": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -390,13 +333,13 @@
                 }
             ]
         }, 
-        "9": {
+        "8": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/trfbig/trfBig/0.1.0", 
-            "id": 9, 
+            "id": 8, 
             "input_connections": {
                 "input": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -439,10 +382,10 @@
                 }
             ]
         }, 
-        "10": {
+        "9": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.1", 
-            "id": 10, 
+            "id": 9, 
             "input_connections": {
                 "input_format|paired|reads_f": {
                     "id": 3, 
@@ -453,7 +396,7 @@
                     "output_name": "output"
                 }, 
                 "reference_genome|history_item": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -533,13 +476,13 @@
                 }
             ]
         }, 
-        "11": {
+        "10": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/augustus/augustus/3.1.0", 
-            "id": 11, 
+            "id": 10, 
             "input_connections": {
                 "input_genome": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -605,13 +548,13 @@
                 }
             ]
         }, 
-        "12": {
+        "11": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/multi_fasta_glimmer_hmm/multi_fasta_glimmerhmm/4.0", 
-            "id": 12, 
+            "id": 11, 
             "input_connections": {
                 "input": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -658,13 +601,13 @@
                 }
             ]
         }, 
-        "13": {
+        "12": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/snap/snap/1.0", 
-            "id": 13, 
+            "id": 12, 
             "input_connections": {
                 "input1": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -730,70 +673,70 @@
                 }
             ]
         }, 
-        "14": {
+        "13": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslcdnafilter/ucsc_pslcdnafilter/1.0", 
-            "id": 14, 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/1.0", 
+            "id": 13, 
             "input_connections": {
-                "alignment": {
-                    "id": 7, 
-                    "output_name": "output_sorted"
-                }, 
                 "query": {
-                    "id": 5, 
+                    "id": 6, 
                     "output_name": "outputfa"
+                }, 
+                "reference_source|database": {
+                    "id": 5, 
+                    "output_name": "output"
                 }
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool UCSC pslCDnaFilter", 
+                    "description": "runtime parameter for tool UCSC BLAT Alignment Tool", 
                     "name": "query"
                 }, 
                 {
-                    "description": "runtime parameter for tool UCSC pslCDnaFilter", 
-                    "name": "alignment"
+                    "description": "runtime parameter for tool UCSC BLAT Alignment Tool", 
+                    "name": "reference_source"
                 }
             ], 
             "label": null, 
-            "name": "UCSC pslCDnaFilter", 
+            "name": "UCSC BLAT Alignment Tool", 
             "outputs": [
                 {
-                    "name": "output_filtered", 
+                    "name": "output_sorted", 
                     "type": "psl"
                 }
             ], 
             "position": {
-                "left": 885.5, 
-                "top": 331
+                "left": 627.5, 
+                "top": 325
             }, 
             "post_job_actions": {}, 
             "tool_errors": null, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslcdnafilter/ucsc_pslcdnafilter/1.0", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "ceec5a5fe894", 
-                "name": "ucsc_pslcdnafilter", 
+                "changeset_revision": "545bc7831814", 
+                "name": "ucsc_blat", 
                 "owner": "yating-l", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"assembly_type\": \"\\\"xeno\\\"\", \"__rerun_remap_job_id__\": null, \"assembly_category\": \"\\\"well-ordered\\\"\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"alignment\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_state": "{\"__page__\": 0, \"query_type\": \"\\\"rnax\\\"\", \"__rerun_remap_job_id__\": null, \"database_type\": \"\\\"dnax\\\"\", \"noHead\": \"\\\"yes\\\"\", \"mask_type\": \"{\\\"mask\\\": \\\"lower\\\", \\\"__current_case__\\\": 0}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reference_source\": \"{\\\"reference_source_selector\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"database\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
-            "uuid": "f73bbbb1-5d92-4555-abe9-5fa6b92ad1f0", 
+            "uuid": "ecd32e88-bb50-472f-9e83-1bba9cc71621", 
             "workflow_outputs": [
                 {
                     "label": null, 
-                    "output_name": "output_filtered", 
-                    "uuid": "3c6234da-10f0-44f4-84d3-d871d1743ed2"
+                    "output_name": "output_sorted", 
+                    "uuid": "0fd967a5-e36c-4920-bd7a-f336eaa560e9"
                 }
             ]
         }, 
-        "15": {
+        "14": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.1.08", 
-            "id": 15, 
+            "id": 14, 
             "input_connections": {
                 "db_opts|histdb": {
-                    "id": 8, 
+                    "id": 7, 
                     "output_name": "outfile"
                 }, 
                 "query": {
@@ -844,17 +787,17 @@
                 }
             ]
         }, 
-        "16": {
+        "15": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/bamtobigwig/bam_to_bigwig/0.1.0", 
-            "id": 16, 
+            "id": 15, 
             "input_connections": {
                 "input_bam": {
-                    "id": 10, 
+                    "id": 9, 
                     "output_name": "output_alignments"
                 }, 
                 "input_reference_fasta": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -901,13 +844,13 @@
                 }
             ]
         }, 
-        "17": {
+        "16": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie/1.3.3", 
-            "id": 17, 
+            "id": 16, 
             "input_connections": {
                 "input_bam": {
-                    "id": 10, 
+                    "id": 9, 
                     "output_name": "output_alignments"
                 }
             }, 
@@ -1041,13 +984,13 @@
                 }
             ]
         }, 
-        "18": {
+        "17": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/regtools_junctions_extract/regtools_junctions_extract/0.1.0", 
-            "id": 18, 
+            "id": 17, 
             "input_connections": {
                 "input1": {
-                    "id": 10, 
+                    "id": 9, 
                     "output_name": "output_alignments"
                 }
             }, 
@@ -1100,21 +1043,127 @@
                 }
             ]
         }, 
+        "18": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslcdnafilter/ucsc_pslcdnafilter/1.0", 
+            "id": 18, 
+            "input_connections": {
+                "alignment": {
+                    "id": 13, 
+                    "output_name": "output_sorted"
+                }, 
+                "query": {
+                    "id": 6, 
+                    "output_name": "outputfa"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool UCSC pslCDnaFilter", 
+                    "name": "query"
+                }, 
+                {
+                    "description": "runtime parameter for tool UCSC pslCDnaFilter", 
+                    "name": "alignment"
+                }
+            ], 
+            "label": null, 
+            "name": "UCSC pslCDnaFilter", 
+            "outputs": [
+                {
+                    "name": "output_filtered", 
+                    "type": "psl"
+                }
+            ], 
+            "position": {
+                "left": 885.5, 
+                "top": 331
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslcdnafilter/ucsc_pslcdnafilter/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "ceec5a5fe894", 
+                "name": "ucsc_pslcdnafilter", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"assembly_type\": \"\\\"xeno\\\"\", \"__rerun_remap_job_id__\": null, \"assembly_category\": \"\\\"well-ordered\\\"\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"alignment\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "f73bbbb1-5d92-4555-abe9-5fa6b92ad1f0", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_filtered", 
+                    "uuid": "3c6234da-10f0-44f4-84d3-d871d1743ed2"
+                }
+            ]
+        }, 
         "19": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslcheck/ucsc_pslcheck/1.0", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/blastxmltopsl/blastXmlToPsl/0.1.0", 
             "id": 19, 
             "input_connections": {
+                "input": {
+                    "id": 14, 
+                    "output_name": "output1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool blastXmlToPsl", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "blastXmlToPsl", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "psl"
+                }
+            ], 
+            "position": {
+                "left": 1214, 
+                "top": 700
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/blastxmltopsl/blastXmlToPsl/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "d81915b5805f", 
+                "name": "blastxmltopsl", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "29a3ddca-9191-4671-afe6-23166f178133", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "692cac62-af13-4f73-ac93-e6c95d989416"
+                }
+            ]
+        }, 
+        "20": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslcheck/ucsc_pslcheck/1.0", 
+            "id": 20, 
+            "input_connections": {
                 "database": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }, 
                 "input_psl": {
-                    "id": 14, 
+                    "id": 18, 
                     "output_name": "output_filtered"
                 }, 
                 "query": {
-                    "id": 5, 
+                    "id": 6, 
                     "output_name": "outputfa"
                 }
             }, 
@@ -1165,111 +1214,13 @@
                 }
             ]
         }, 
-        "20": {
-            "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/blastxmltopsl/blastXmlToPsl/0.1.0", 
-            "id": 20, 
-            "input_connections": {
-                "input": {
-                    "id": 15, 
-                    "output_name": "output1"
-                }
-            }, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool blastXmlToPsl", 
-                    "name": "input"
-                }
-            ], 
-            "label": null, 
-            "name": "blastXmlToPsl", 
-            "outputs": [
-                {
-                    "name": "output", 
-                    "type": "psl"
-                }
-            ], 
-            "position": {
-                "left": 1214, 
-                "top": 700
-            }, 
-            "post_job_actions": {}, 
-            "tool_errors": null, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/blastxmltopsl/blastXmlToPsl/0.1.0", 
-            "tool_shed_repository": {
-                "changeset_revision": "d81915b5805f", 
-                "name": "blastxmltopsl", 
-                "owner": "yating-l", 
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            }, 
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
-            "tool_version": "0.1.0", 
-            "type": "tool", 
-            "uuid": "29a3ddca-9191-4671-afe6-23166f178133", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output", 
-                    "uuid": "692cac62-af13-4f73-ac93-e6c95d989416"
-                }
-            ]
-        }, 
         "21": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslpostarget/ucsc_pslpostarget/1.0", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/psltobigpsl/pslToBigPsl/0.1.0", 
             "id": 21, 
             "input_connections": {
-                "input_psl": {
-                    "id": 19, 
-                    "output_name": "pass_psl"
-                }
-            }, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool UCSC pslPosTarget", 
-                    "name": "input_psl"
-                }
-            ], 
-            "label": null, 
-            "name": "UCSC pslPosTarget", 
-            "outputs": [
-                {
-                    "name": "output_psl", 
-                    "type": "psl"
-                }
-            ], 
-            "position": {
-                "left": 1268, 
-                "top": 350
-            }, 
-            "post_job_actions": {}, 
-            "tool_errors": null, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslpostarget/ucsc_pslpostarget/1.0", 
-            "tool_shed_repository": {
-                "changeset_revision": "fe51c5a974b5", 
-                "name": "ucsc_pslpostarget", 
-                "owner": "yating-l", 
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            }, 
-            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"input_psl\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
-            "tool_version": "1.0", 
-            "type": "tool", 
-            "uuid": "5ccfb2fa-8705-4cfe-b39c-b422d185f519", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output_psl", 
-                    "uuid": "0b21d84a-7c3d-45e9-a4ab-30fa2fa015e2"
-                }
-            ]
-        }, 
-        "22": {
-            "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/psltobigpsl/pslToBigPsl/0.1.0", 
-            "id": 22, 
-            "input_connections": {
                 "input": {
-                    "id": 20, 
+                    "id": 19, 
                     "output_name": "output"
                 }
             }, 
@@ -1317,21 +1268,70 @@
                 }
             ]
         }, 
+        "22": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslpostarget/ucsc_pslpostarget/1.0", 
+            "id": 22, 
+            "input_connections": {
+                "input_psl": {
+                    "id": 20, 
+                    "output_name": "pass_psl"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool UCSC pslPosTarget", 
+                    "name": "input_psl"
+                }
+            ], 
+            "label": null, 
+            "name": "UCSC pslPosTarget", 
+            "outputs": [
+                {
+                    "name": "output_psl", 
+                    "type": "psl"
+                }
+            ], 
+            "position": {
+                "left": 1268, 
+                "top": 350
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslpostarget/ucsc_pslpostarget/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "fe51c5a974b5", 
+                "name": "ucsc_pslpostarget", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"input_psl\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "5ccfb2fa-8705-4cfe-b39c-b422d185f519", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_psl", 
+                    "uuid": "0b21d84a-7c3d-45e9-a4ab-30fa2fa015e2"
+                }
+            ]
+        }, 
         "23": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/psltobigpsl/pslToBigPsl/0.1.0", 
             "id": 23, 
             "input_connections": {
                 "add_input|input_cds": {
-                    "id": 5, 
+                    "id": 6, 
                     "output_name": "outputcds"
                 }, 
                 "add_input|input_fa": {
-                    "id": 5, 
+                    "id": 6, 
                     "output_name": "outputfa"
                 }, 
                 "input": {
-                    "id": 21, 
+                    "id": 22, 
                     "output_name": "output_psl"
                 }
             }, 
@@ -1388,7 +1388,7 @@
             "id": 24, 
             "input_connections": {
                 "fasta_file": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }, 
                 "group_0|format_0|formatChoice|bedChoice|BED_blat_alignment": {
@@ -1396,39 +1396,39 @@
                     "output_name": "output_sorted"
                 }, 
                 "group_1|format_0|formatChoice|bedChoice|BED_simple_repeats": {
-                    "id": 9, 
+                    "id": 8, 
                     "output_name": "output"
                 }, 
                 "group_2|format_0|formatChoice|bedChoice|BED_blast_alignment": {
-                    "id": 22, 
+                    "id": 21, 
                     "output_name": "output_sorted"
                 }, 
                 "group_3|format_0|formatChoice|BAM": {
-                    "id": 10, 
+                    "id": 9, 
                     "output_name": "output_alignments"
                 }, 
                 "group_3|format_1|formatChoice|BIGWIG": {
-                    "id": 16, 
+                    "id": 15, 
                     "output_name": "output_bigwig"
                 }, 
                 "group_3|format_2|formatChoice|GTF": {
-                    "id": 17, 
+                    "id": 16, 
                     "output_name": "output_gtf"
                 }, 
                 "group_3|format_3|formatChoice|bedChoice|BED_splice_junctions": {
-                    "id": 18, 
+                    "id": 17, 
                     "output_name": "fixed_output"
                 }, 
                 "group_4|format_0|formatChoice|GFF3": {
-                    "id": 11, 
+                    "id": 10, 
                     "output_name": "output"
                 }, 
                 "group_4|format_1|formatChoice|GFF3": {
-                    "id": 12, 
+                    "id": 11, 
                     "output_name": "output"
                 }, 
                 "group_4|format_2|formatChoice|GFF3": {
-                    "id": 13, 
+                    "id": 12, 
                     "output_name": "output1"
                 }
             }, 
@@ -1476,5 +1476,5 @@
             ]
         }
     }, 
-    "uuid": "d750c194-484c-4285-89a2-2759220e8d52"
+    "uuid": "855f5e18-4691-48d0-b94f-18025b18136b"
 }

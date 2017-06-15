@@ -12,6 +12,38 @@
             "inputs": [
                 {
                     "description": "", 
+                    "name": "Genome sequence"
+                }
+            ], 
+            "label": "Reference genome", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 462
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Genome sequence\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "7772f610-21da-456b-bda2-e0633f721c7b", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "541bf238-30d0-4cf2-8df2-27ecfb529fec"
+                }
+            ]
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
                     "name": "mRNA genBank records"
                 }
             ], 
@@ -19,7 +51,7 @@
             "name": "Input dataset", 
             "outputs": [], 
             "position": {
-                "left": 223.5, 
+                "left": 410.5, 
                 "top": 537
             }, 
             "tool_errors": null, 
@@ -33,38 +65,6 @@
                     "label": null, 
                     "output_name": "output", 
                     "uuid": "1f362681-d6c3-40aa-8e7c-f8e46343ac36"
-                }
-            ]
-        }, 
-        "1": {
-            "annotation": "", 
-            "content_id": null, 
-            "id": 1, 
-            "input_connections": {}, 
-            "inputs": [
-                {
-                    "description": "", 
-                    "name": "Genome sequence"
-                }
-            ], 
-            "label": "Reference genome", 
-            "name": "Input dataset", 
-            "outputs": [], 
-            "position": {
-                "left": 215, 
-                "top": 654
-            }, 
-            "tool_errors": null, 
-            "tool_id": null, 
-            "tool_state": "{\"name\": \"Genome sequence\"}", 
-            "tool_version": null, 
-            "type": "data_input", 
-            "uuid": "7772f610-21da-456b-bda2-e0633f721c7b", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output", 
-                    "uuid": "541bf238-30d0-4cf2-8df2-27ecfb529fec"
                 }
             ]
         }, 
@@ -83,7 +83,7 @@
             "name": "Input dataset", 
             "outputs": [], 
             "position": {
-                "left": 210, 
+                "left": 397, 
                 "top": 919
             }, 
             "tool_errors": null, 
@@ -115,7 +115,7 @@
             "name": "Input dataset", 
             "outputs": [], 
             "position": {
-                "left": 221, 
+                "left": 408, 
                 "top": 1147
             }, 
             "tool_errors": null, 
@@ -147,7 +147,7 @@
             "name": "Input dataset", 
             "outputs": [], 
             "position": {
-                "left": 213, 
+                "left": 400, 
                 "top": 1269
             }, 
             "tool_errors": null, 
@@ -166,69 +166,11 @@
         }, 
         "5": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/rename_scaffolds/rename_scaffold/0.1.0", 
             "id": 5, 
             "input_connections": {
-                "gbfile": {
-                    "id": 0, 
-                    "output_name": "output"
-                }
-            }, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool gbToFasta", 
-                    "name": "gbfile"
-                }
-            ], 
-            "label": null, 
-            "name": "gbToFasta", 
-            "outputs": [
-                {
-                    "name": "outputfa", 
-                    "type": "fasta"
-                }, 
-                {
-                    "name": "outputcds", 
-                    "type": "tabular"
-                }
-            ], 
-            "position": {
-                "left": 421.5, 
-                "top": 470
-            }, 
-            "post_job_actions": {}, 
-            "tool_errors": null, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0", 
-            "tool_shed_repository": {
-                "changeset_revision": "b673449d111a", 
-                "name": "gbtofasta", 
-                "owner": "yating-l", 
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            }, 
-            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"cds\": \"\\\"yes\\\"\", \"gbfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
-            "tool_version": "1.0", 
-            "type": "tool", 
-            "uuid": "c8151e48-383a-4369-8e68-82c09486a4ad", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "outputcds", 
-                    "uuid": "720e4556-52b1-4894-8db0-d45ee79056ba"
-                }, 
-                {
-                    "label": null, 
-                    "output_name": "outputfa", 
-                    "uuid": "6fd0deb9-28f9-4dc0-8cc4-40042e17ce2a"
-                }
-            ]
-        }, 
-        "6": {
-            "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/rename_scaffolds/rename_scaffold/0.1.0", 
-            "id": 6, 
-            "input_connections": {
                 "input": {
-                    "id": 1, 
+                    "id": 0, 
                     "output_name": "output"
                 }
             }, 
@@ -251,7 +193,7 @@
                 }
             ], 
             "position": {
-                "left": 200, 
+                "left": 387, 
                 "top": 775
             }, 
             "post_job_actions": {}, 
@@ -280,13 +222,71 @@
                 }
             ]
         }, 
+        "6": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0", 
+            "id": 6, 
+            "input_connections": {
+                "gbfile": {
+                    "id": 1, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool gbToFasta", 
+                    "name": "gbfile"
+                }
+            ], 
+            "label": null, 
+            "name": "gbToFasta", 
+            "outputs": [
+                {
+                    "name": "outputfa", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "outputcds", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 608.5, 
+                "top": 470
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "b673449d111a", 
+                "name": "gbtofasta", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"cds\": \"\\\"yes\\\"\", \"gbfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "c8151e48-383a-4369-8e68-82c09486a4ad", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "outputcds", 
+                    "uuid": "720e4556-52b1-4894-8db0-d45ee79056ba"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "outputfa", 
+                    "uuid": "6fd0deb9-28f9-4dc0-8cc4-40042e17ce2a"
+                }
+            ]
+        }, 
         "7": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/fa_to_twobit_340/fa_to_twobit/1.0", 
             "id": 7, 
             "input_connections": {
                 "fasta_input": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -305,7 +305,7 @@
                 }
             ], 
             "position": {
-                "left": 237.5, 
+                "left": 424.5, 
                 "top": 395
             }, 
             "post_job_actions": {}, 
@@ -335,7 +335,7 @@
             "id": 8, 
             "input_connections": {
                 "fasta_input": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -354,7 +354,7 @@
                 }
             ], 
             "position": {
-                "left": 376, 
+                "left": 563, 
                 "top": 627
             }, 
             "post_job_actions": {}, 
@@ -384,7 +384,7 @@
             "id": 9, 
             "input_connections": {
                 "input": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -403,7 +403,7 @@
                 }
             ], 
             "position": {
-                "left": 1002, 
+                "left": 1189, 
                 "top": 683
             }, 
             "post_job_actions": {}, 
@@ -441,7 +441,7 @@
                     "output_name": "output"
                 }, 
                 "reference_genome|history_item": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -476,7 +476,7 @@
                 }
             ], 
             "position": {
-                "left": 461, 
+                "left": 648, 
                 "top": 1370
             }, 
             "post_job_actions": {}, 
@@ -526,7 +526,7 @@
             "id": 11, 
             "input_connections": {
                 "input_genome": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -557,7 +557,7 @@
                 }
             ], 
             "position": {
-                "left": 1166.5, 
+                "left": 1353.5, 
                 "top": 1179.5
             }, 
             "post_job_actions": {
@@ -598,7 +598,7 @@
             "id": 12, 
             "input_connections": {
                 "input": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -621,7 +621,7 @@
                 }
             ], 
             "position": {
-                "left": 1161.5, 
+                "left": 1348.5, 
                 "top": 1344
             }, 
             "post_job_actions": {}, 
@@ -651,7 +651,7 @@
             "id": 13, 
             "input_connections": {
                 "input1": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -682,7 +682,7 @@
                 }
             ], 
             "position": {
-                "left": 1148.5, 
+                "left": 1335.5, 
                 "top": 1462
             }, 
             "post_job_actions": {
@@ -723,7 +723,7 @@
             "id": 14, 
             "input_connections": {
                 "fasta_input": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }, 
                 "mkcount_input": {
@@ -750,7 +750,7 @@
                 }
             ], 
             "position": {
-                "left": 175, 
+                "left": 362, 
                 "top": 200
             }, 
             "post_job_actions": {}, 
@@ -780,7 +780,7 @@
             "id": 15, 
             "input_connections": {
                 "fasta_input": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }, 
                 "mkcount_input": {
@@ -807,7 +807,7 @@
                 }
             ], 
             "position": {
-                "left": 674, 
+                "left": 861, 
                 "top": 656
             }, 
             "post_job_actions": {}, 
@@ -841,7 +841,7 @@
                     "output_name": "output_alignments"
                 }, 
                 "input_reference_fasta": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }
             }, 
@@ -864,7 +864,7 @@
                 }
             ], 
             "position": {
-                "left": 759.5, 
+                "left": 946.5, 
                 "top": 1157.5
             }, 
             "post_job_actions": {}, 
@@ -953,7 +953,7 @@
                 }
             ], 
             "position": {
-                "left": 747, 
+                "left": 934, 
                 "top": 1307
             }, 
             "post_job_actions": {
@@ -996,7 +996,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie/1.3.3", 
             "tool_shed_repository": {
-                "changeset_revision": "c84d44519b2e", 
+                "changeset_revision": "6e45b443ef1f", 
                 "name": "stringtie", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1057,7 +1057,7 @@
                 }
             ], 
             "position": {
-                "left": 773, 
+                "left": 960, 
                 "top": 1706.5
             }, 
             "post_job_actions": {
@@ -1120,7 +1120,7 @@
                 }
             ], 
             "position": {
-                "left": 496.5, 
+                "left": 683.5, 
                 "top": 212
             }, 
             "post_job_actions": {}, 
@@ -1150,7 +1150,7 @@
             "id": 20, 
             "input_connections": {
                 "input_file": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }, 
                 "mask_data_file": {
@@ -1177,7 +1177,7 @@
                 }
             ], 
             "position": {
-                "left": 682, 
+                "left": 869, 
                 "top": 828
             }, 
             "post_job_actions": {}, 
@@ -1207,7 +1207,7 @@
             "id": 21, 
             "input_connections": {
                 "query": {
-                    "id": 5, 
+                    "id": 6, 
                     "output_name": "outputfa"
                 }, 
                 "reference_source|database": {
@@ -1234,7 +1234,7 @@
                 }
             ], 
             "position": {
-                "left": 646.5, 
+                "left": 833.5, 
                 "top": 327
             }, 
             "post_job_actions": {}, 
@@ -1291,7 +1291,7 @@
                 }
             ], 
             "position": {
-                "left": 1013, 
+                "left": 1200, 
                 "top": 949
             }, 
             "post_job_actions": {}, 
@@ -1325,7 +1325,7 @@
                     "output_name": "output_sorted"
                 }, 
                 "query": {
-                    "id": 5, 
+                    "id": 6, 
                     "output_name": "outputfa"
                 }
             }, 
@@ -1348,7 +1348,7 @@
                 }
             ], 
             "position": {
-                "left": 885.5, 
+                "left": 1072.5, 
                 "top": 460
             }, 
             "post_job_actions": {}, 
@@ -1397,7 +1397,7 @@
                 }
             ], 
             "position": {
-                "left": 1214, 
+                "left": 1401, 
                 "top": 829
             }, 
             "post_job_actions": {}, 
@@ -1427,7 +1427,7 @@
             "id": 25, 
             "input_connections": {
                 "database": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }, 
                 "input_psl": {
@@ -1435,7 +1435,7 @@
                     "output_name": "output_filtered"
                 }, 
                 "query": {
-                    "id": 5, 
+                    "id": 6, 
                     "output_name": "outputfa"
                 }
             }, 
@@ -1462,7 +1462,7 @@
                 }
             ], 
             "position": {
-                "left": 1086.5, 
+                "left": 1273.5, 
                 "top": 456
             }, 
             "post_job_actions": {}, 
@@ -1511,7 +1511,7 @@
                 }
             ], 
             "position": {
-                "left": 1386, 
+                "left": 1573, 
                 "top": 924.5
             }, 
             "post_job_actions": {}, 
@@ -1565,7 +1565,7 @@
                 }
             ], 
             "position": {
-                "left": 1268, 
+                "left": 1455, 
                 "top": 479
             }, 
             "post_job_actions": {}, 
@@ -1595,11 +1595,11 @@
             "id": 28, 
             "input_connections": {
                 "add_input|input_cds": {
-                    "id": 5, 
+                    "id": 6, 
                     "output_name": "outputcds"
                 }, 
                 "add_input|input_fa": {
-                    "id": 5, 
+                    "id": 6, 
                     "output_name": "outputfa"
                 }, 
                 "input": {
@@ -1630,7 +1630,7 @@
                 }
             ], 
             "position": {
-                "left": 1457.5, 
+                "left": 1644.5, 
                 "top": 558
             }, 
             "post_job_actions": {}, 
@@ -1660,7 +1660,7 @@
             "id": 29, 
             "input_connections": {
                 "fasta_file": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "output"
                 }, 
                 "group_0|format_0|formatChoice|bedChoice|BED_blat_alignment": {
@@ -1723,7 +1723,7 @@
                 }
             ], 
             "position": {
-                "left": 1665, 
+                "left": 1852, 
                 "top": 755
             }, 
             "post_job_actions": {}, 
@@ -1748,5 +1748,5 @@
             ]
         }
     }, 
-    "uuid": "40920d62-eda1-4fc9-8ca8-4be52543e444"
+    "uuid": "974645d3-7703-4fd5-b76e-ff9397d6fbaa"
 }
