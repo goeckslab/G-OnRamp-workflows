@@ -27,12 +27,12 @@
             "tool_state": "{\"name\": \"Genome sequence\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "10df9ad0-cc83-4999-b61e-7774eb6c5e83", 
+            "uuid": "dddff46e-d3cd-4dcb-9d98-154bd4733fc2", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "735315a3-ac7a-41ea-b07a-ea5d98cfee88"
+                    "uuid": "2505e9a9-fafc-4578-8fcd-cd60d57db54f"
                 }
             ]
         }, 
@@ -59,12 +59,12 @@
             "tool_state": "{\"name\": \"mRNA genBank records\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "7eb0aa62-4a58-4aee-86e1-3368addfa694", 
+            "uuid": "4bf63e9c-6f3d-495b-be43-61db7335894f", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "d1a228ea-9db3-4cbe-85ca-210dfe3f3689"
+                    "uuid": "1afce823-4665-4fcd-8e5f-7731c06c1e73"
                 }
             ]
         }, 
@@ -91,12 +91,12 @@
             "tool_state": "{\"name\": \"Protein sequence\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "9c417e05-8b1e-4c54-bfb3-001fdc506a24", 
+            "uuid": "de49ecb3-2ed3-4b26-a115-68bacd78cf3b", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "0c63c44e-dde7-41b1-b977-35041b23fcea"
+                    "uuid": "4ccba740-4244-424d-a3ac-0c955a536a3a"
                 }
             ]
         }, 
@@ -123,12 +123,12 @@
             "tool_state": "{\"name\": \"RNA-seq forward\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "654a9b70-f3c6-4421-9925-b7b2cb605698", 
+            "uuid": "25b59e4c-2386-474e-95a6-731de6a3f9e8", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "42a04309-2be8-450c-84a6-d89b848056e0"
+                    "uuid": "4fce16a3-43aa-411a-83b7-a70c185b160d"
                 }
             ]
         }, 
@@ -155,12 +155,12 @@
             "tool_state": "{\"name\": \"RNA-seq reverse\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "369c154a-c2e5-47c7-bc51-31d51a28a051", 
+            "uuid": "7b99bc88-9cbb-4857-bea8-0b93044ff13f", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "b1c63451-f71e-41d4-b645-1a42be38b464"
+                    "uuid": "acea7e71-affb-42c7-8392-cbece30ce5ef"
                 }
             ]
         }, 
@@ -208,17 +208,17 @@
             "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "1a1c0299-2af2-4cab-ac41-acfa73cc4c4e", 
+            "uuid": "8acf263c-418d-4a5f-81d5-d1d4d2e3c4c3", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "index", 
-                    "uuid": "3e79b375-644b-4ba0-bbc0-ec4adfac00c8"
+                    "uuid": "a8544eb1-85e5-413e-a2a5-e4fa927f54e5"
                 }, 
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "077c3854-9e95-4120-a113-24885cf8454b"
+                    "uuid": "903dc8b9-05f8-451b-98c8-eb2691c27a85"
                 }
             ]
         }, 
@@ -266,17 +266,17 @@
             "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"cds\": \"\\\"yes\\\"\", \"gbfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
-            "uuid": "b7135884-8afa-4666-9a45-b2d01264f69a", 
+            "uuid": "a77d01d4-f7a9-4962-bfab-1d487966815c", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "outputcds", 
-                    "uuid": "b65e40d3-bc12-4bcd-872e-622fb7cd1057"
+                    "uuid": "0bba4342-1c2f-4906-9205-087a021ea395"
                 }, 
                 {
                     "label": null, 
                     "output_name": "outputfa", 
-                    "uuid": "96b5551d-6de0-4e44-b893-2ae2c2697584"
+                    "uuid": "f33f57c0-f22f-47f3-8673-a724773e1cc0"
                 }
             ]
         }, 
@@ -324,12 +324,12 @@
             "tool_state": "{\"__page__\": 0, \"mask_data_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"title\": \"\\\"\\\"\", \"dbtype\": \"\\\"nucl\\\"\", \"__rerun_remap_job_id__\": null, \"hash_index\": \"\\\"true\\\"\", \"tax\": \"{\\\"__current_case__\\\": 0, \\\"taxselect\\\": \\\"\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"parse_seqids\": \"\\\"false\\\"\"}", 
             "tool_version": "0.1.08", 
             "type": "tool", 
-            "uuid": "e188fed5-2949-4527-8c22-37f99ac51890", 
+            "uuid": "cc68360e-93ef-4c44-ac0d-a36c68ce3a79", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "outfile", 
-                    "uuid": "59d4e5dd-d88f-46b6-8c5a-7d4b3e5ae071"
+                    "uuid": "c0b0ab6d-5633-4785-b990-b1064b0d8f09"
                 }
             ]
         }, 
@@ -373,12 +373,12 @@
             "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "6fb199be-d6e4-436f-812e-2a0a803d3eb3", 
+            "uuid": "860792f3-9e20-4aaf-8235-b384d49239c7", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "59170ed0-291b-4823-a339-eed5d39cbeed"
+                    "uuid": "e3519758-c88e-4ec9-bc9d-c8fce3c26809"
                 }
             ]
         }, 
@@ -467,12 +467,12 @@
             "tool_state": "{\"alignment_options\": \"{\\\"__current_case__\\\": 0, \\\"alignment_options_selector\\\": \\\"defaults\\\"}\", \"max_seeds\": \"\\\"\\\"\", \"input_format\": \"{\\\"paired\\\": {\\\"aligned_file\\\": \\\"false\\\", \\\"unaligned_file\\\": \\\"false\\\", \\\"paired_end_options\\\": {\\\"paired_end_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}, \\\"paired_selector\\\": \\\"paired\\\", \\\"reads_f\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"reads_r\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, \\\"input_format_selector\\\": \\\"fastq\\\", \\\"__current_case__\\\": 1}\", \"__page__\": 0, \"max_primary\": \"\\\"5\\\"\", \"scoring_options\": \"{\\\"scoring_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"reference_genome\": \"{\\\"reference_genome_source\\\": \\\"history\\\", \\\"history_item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1}\", \"spliced_options\": \"{\\\"spliced_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"paired_options\": \"{\\\"paired_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"input_options\": \"{\\\"input_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"secondary\": \"\\\"false\\\"\"}", 
             "tool_version": "2.0.5.1", 
             "type": "tool", 
-            "uuid": "1047a6a6-046f-4607-b4fb-7f9ed0761bb0", 
+            "uuid": "a0e44141-dbde-4982-92fc-9fcd32b22af6", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_aligned_reads_l", 
-                    "uuid": "7c380d50-3123-4d2e-a911-fb1ac69f4c19"
+                    "uuid": "98e2a700-4c07-4951-bf77-9931a80be2a1"
                 }
             ]
         }, 
@@ -539,12 +539,12 @@
             "tool_state": "{\"__page__\": 0, \"input_genome\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"outputs\": \"[\\\"protein\\\", \\\"codingseq\\\", \\\"cds\\\"]\", \"__rerun_remap_job_id__\": null, \"organism\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"genemodel\": \"\\\"complete\\\"\", \"utr\": \"\\\"false\\\"\", \"noInFrameStop\": \"\\\"false\\\"\", \"singlestrand\": \"\\\"false\\\"\", \"gff\": \"\\\"true\\\"\", \"strand\": \"\\\"both\\\"\"}", 
             "tool_version": "3.1.0", 
             "type": "tool", 
-            "uuid": "06c775ba-7726-4121-ba61-fbee36b86194", 
+            "uuid": "1b701f27-5dc5-4f0c-bfd5-6f79d7a90efc", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "ab8a4e4a-9a32-41d3-b0b8-d31df5824ada"
+                    "uuid": "d92336ad-9bb0-4799-aeac-695b372195a4"
                 }
             ]
         }, 
@@ -592,12 +592,12 @@
             "tool_state": "{\"__page__\": 0, \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"trained_specie\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "4.0", 
             "type": "tool", 
-            "uuid": "211d5be1-3d42-4306-86fc-f4d278b6f13c", 
+            "uuid": "14c1e8c0-7060-4fc7-bfaf-ec5c56129701", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "1a84f19c-0d8d-47de-b9f7-1652ba3a8add"
+                    "uuid": "5edd2b2e-5850-4c2b-bfd3-dff35ea8b436"
                 }
             ]
         }, 
@@ -664,12 +664,12 @@
             "tool_state": "{\"__page__\": 0, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"settings\": \"{\\\"__current_case__\\\": 0, \\\"advanced\\\": \\\"simple\\\"}\", \"__rerun_remap_job_id__\": null, \"proteins\": \"\\\"\\\"\", \"transcripts\": \"\\\"\\\"\", \"organism\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
-            "uuid": "e7d533c0-3d60-4567-9bb0-91123c89939a", 
+            "uuid": "a6c69992-c023-4315-ba2b-a9c57fd0cb55", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output1", 
-                    "uuid": "501ec8f8-bff7-488e-9600-b512870c3be1"
+                    "uuid": "4aae947d-7999-4e2d-ba19-a4f6ad12c8f3"
                 }
             ]
         }, 
@@ -721,12 +721,12 @@
             "tool_state": "{\"__page__\": 0, \"query_type\": \"\\\"rnax\\\"\", \"__rerun_remap_job_id__\": null, \"database_type\": \"\\\"dnax\\\"\", \"noHead\": \"\\\"yes\\\"\", \"mask_type\": \"{\\\"mask\\\": \\\"lower\\\", \\\"__current_case__\\\": 0}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reference_source\": \"{\\\"reference_source_selector\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"database\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
-            "uuid": "ecd32e88-bb50-472f-9e83-1bba9cc71621", 
+            "uuid": "4fdb2d1e-a054-448c-ad28-90d21fc0bbb7", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_sorted", 
-                    "uuid": "0fd967a5-e36c-4920-bd7a-f336eaa560e9"
+                    "uuid": "6e19dc96-9e92-4ede-8dc9-fd71c8d5d5b3"
                 }
             ]
         }, 
@@ -778,12 +778,12 @@
             "tool_state": "{\"evalue_cutoff\": \"\\\"0.001\\\"\", \"__page__\": 0, \"adv_opts\": \"{\\\"adv_opts_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"blast_type\": \"\\\"tblastn\\\"\", \"db_opts\": \"{\\\"db_opts_selector\\\": \\\"histdb\\\", \\\"subject\\\": \\\"\\\", \\\"histdb\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"database\\\": \\\"\\\"}\", \"output\": \"{\\\"out_format\\\": \\\"5\\\", \\\"__current_case__\\\": 3}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "0.1.08", 
             "type": "tool", 
-            "uuid": "e06c8e60-71b7-4962-bb3b-23fd3085b03d", 
+            "uuid": "60b681e9-41b9-4c5f-bb66-aa2096aaab13", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output1", 
-                    "uuid": "010dcf64-0cf6-44d3-bdd9-aa9bd26a28a9"
+                    "uuid": "0a86197a-24db-42d9-bd05-383ba465b2ce"
                 }
             ]
         }, 
@@ -835,12 +835,12 @@
             "tool_state": "{\"input_reference_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"input_bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "8776aafd-e8dc-4252-9416-9e0909a1e8b6", 
+            "uuid": "861893c2-828d-4e9b-8936-36a083be3db1", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_bigwig", 
-                    "uuid": "d78661fc-e4bd-400f-b757-3f25d8289c15"
+                    "uuid": "48e39f8a-b369-4363-9ddb-16035233734d"
                 }
             ]
         }, 
@@ -960,27 +960,27 @@
             "tool_state": "{\"input_bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"option_set\": \"{\\\"options\\\": \\\"default\\\", \\\"__current_case__\\\": 0}\", \"guide\": \"{\\\"use_guide\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"__page__\": 0}", 
             "tool_version": "1.3.3", 
             "type": "tool", 
-            "uuid": "4cc403f0-8b22-48ba-becd-af427cbbbb90", 
+            "uuid": "18dc6140-8620-474b-b972-f8a5f3713b9f", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_gtf", 
-                    "uuid": "f2848656-2f63-4e1e-a115-d70a07ea8f20"
+                    "uuid": "7f768e37-0b02-46d2-8b7a-db4697fd22f3"
                 }, 
                 {
                     "label": null, 
                     "output_name": "transcript_counts", 
-                    "uuid": "0006bf1f-90d9-49a2-96a9-9fe487b200f8"
+                    "uuid": "3de34d25-1b86-436d-9f9d-78d7d766b933"
                 }, 
                 {
                     "label": null, 
                     "output_name": "legend", 
-                    "uuid": "24066a25-072e-4a01-a4e1-7cc3b2a64923"
+                    "uuid": "19385cd5-7472-45a5-856a-5fa84147f4b1"
                 }, 
                 {
                     "label": null, 
                     "output_name": "gene_counts", 
-                    "uuid": "9d02afc5-bbac-454a-9827-929bd7207935"
+                    "uuid": "4ba51ba0-df74-4539-9290-3e44d6394121"
                 }
             ]
         }, 
@@ -1034,12 +1034,12 @@
             "tool_state": "{\"__page__\": 0, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"max_intron_length\": \"\\\"500000\\\"\", \"__rerun_remap_job_id__\": null, \"min_intron_length\": \"\\\"20\\\"\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"__current_case__\\\": 1}\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "e14bb952-7731-47e5-be01-d88752f41132", 
+            "uuid": "d316413b-cd97-442d-8ad9-d2473a58bdd5", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "fixed_output", 
-                    "uuid": "56310ca6-2a8e-49af-8226-886125287975"
+                    "uuid": "fd6ef3f1-093f-49b1-9a41-a213581092c5"
                 }
             ]
         }, 
@@ -1091,12 +1091,12 @@
             "tool_state": "{\"__page__\": 0, \"assembly_type\": \"\\\"xeno\\\"\", \"__rerun_remap_job_id__\": null, \"assembly_category\": \"\\\"well-ordered\\\"\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"alignment\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
-            "uuid": "f73bbbb1-5d92-4555-abe9-5fa6b92ad1f0", 
+            "uuid": "90f418d8-c3b7-4e4e-ba05-4cea93a25467", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_filtered", 
-                    "uuid": "3c6234da-10f0-44f4-84d3-d871d1743ed2"
+                    "uuid": "a7530c37-968b-40bd-8446-9228cd5eeab3"
                 }
             ]
         }, 
@@ -1140,12 +1140,12 @@
             "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "29a3ddca-9191-4671-afe6-23166f178133", 
+            "uuid": "dd88c647-435d-4a30-865d-0fd6f9900dc3", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "692cac62-af13-4f73-ac93-e6c95d989416"
+                    "uuid": "c6979374-8f58-4854-95dc-329cf3ed25ac"
                 }
             ]
         }, 
@@ -1205,12 +1205,12 @@
             "tool_state": "{\"__page__\": 0, \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"input_psl\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"database\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
-            "uuid": "e2f553cf-6abc-4ae3-8e3e-167d28cabac5", 
+            "uuid": "6711204b-3c11-4d06-97b3-1d6ebef7b32f", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "pass_psl", 
-                    "uuid": "083b531c-9eba-4816-91b6-8eb48b754790"
+                    "uuid": "7f534e97-d6c1-4c3e-8c46-099fb85b081c"
                 }
             ]
         }, 
@@ -1254,17 +1254,17 @@
             "tool_state": "{\"__page__\": 0, \"add_input\": \"{\\\"input_type\\\": \\\"no\\\", \\\"__current_case__\\\": 3}\", \"__rerun_remap_job_id__\": null, \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "431bb3e4-9f52-4325-afca-d8c25eb087b6", 
+            "uuid": "56e6eba1-9720-4d9b-b1fc-1bd124a9cceb", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_sorted", 
-                    "uuid": "be7338c5-a5d4-45d3-8d2f-7fa5e371939e"
+                    "uuid": "bf136e11-74e7-4671-86a4-2713458da242"
                 }, 
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "ad16070e-faad-4e09-ab89-30cc4e512d49"
+                    "uuid": "57064d02-dd63-405b-86b2-5ffe46cb29a6"
                 }
             ]
         }, 
@@ -1308,12 +1308,12 @@
             "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"input_psl\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
-            "uuid": "5ccfb2fa-8705-4cfe-b39c-b422d185f519", 
+            "uuid": "49962144-a344-4acd-988d-794c6ae09d59", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_psl", 
-                    "uuid": "0b21d84a-7c3d-45e9-a4ab-30fa2fa015e2"
+                    "uuid": "dcb40837-51a4-4323-9b86-9c884a100611"
                 }
             ]
         }, 
@@ -1373,18 +1373,18 @@
             "tool_state": "{\"__page__\": 0, \"add_input\": \"{\\\"input_type\\\": \\\"both\\\", \\\"input_fa\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"input_cds\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"__rerun_remap_job_id__\": null, \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "fd7682df-2f5c-470c-b621-442ce879efb8", 
+            "uuid": "7d8310dd-da6e-4837-8be0-a6310c3245da", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output_sorted", 
-                    "uuid": "d886c29a-02cb-4d54-b8c0-477319af38d4"
+                    "uuid": "f22bb019-9eb0-4bdc-b1cf-c031673cf07b"
                 }
             ]
         }, 
         "24": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/rmarenco/hubarchivecreator/hubArchiveCreator/2.3.1", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rmarenco/hubarchivecreator/hubArchiveCreator/2.4.2", 
             "id": 24, 
             "input_connections": {
                 "fasta_file": {
@@ -1456,25 +1456,25 @@
             }, 
             "post_job_actions": {}, 
             "tool_errors": null, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/rmarenco/hubarchivecreator/hubArchiveCreator/2.3.1", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rmarenco/hubarchivecreator/hubArchiveCreator/2.4.2", 
             "tool_shed_repository": {
-                "changeset_revision": "99dad5f9444c", 
+                "changeset_revision": "6aa28a85cc38", 
                 "name": "hubarchivecreator", 
                 "owner": "rmarenco", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"group\": \"[{\\\"__index__\\\": 0, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#8064a2\\\", \\\"bedChoice\\\": {\\\"BED_blat_alignment\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_blat_alignment_option\\\", \\\"__current_case__\\\": 5}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"BLAT Alignment\\\"}}], \\\"group_name\\\": \\\"BLAT Alignment\\\"}, {\\\"__index__\\\": 1, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#f79646\\\", \\\"bedChoice\\\": {\\\"BED_simple_repeats\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_simple_repeats_option\\\", \\\"__current_case__\\\": 2}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Simple repeat\\\"}}], \\\"group_name\\\": \\\"Simple repeats\\\"}, {\\\"__index__\\\": 2, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#4f81bd\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_blast_alignment_option\\\", \\\"BED_blast_alignment\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 4}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"BLAST Alignment\\\"}}], \\\"group_name\\\": \\\"Homology\\\"}, {\\\"__index__\\\": 3, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bam\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"BAM\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"longLabel\\\": \\\"HISAT sequence alignment\\\", \\\"__current_case__\\\": 0}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bigwig\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"longLabel\\\": \\\"RNA-Seq Coverage\\\", \\\"__current_case__\\\": 3, \\\"BIGWIG\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gtf\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"GTF\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 6, \\\"longLabel\\\": \\\"StringTie transcripts \\\"}}, {\\\"__index__\\\": 3, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_splice_junctions_option\\\", \\\"BED_splice_junctions\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 3}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Splice junctions\\\"}}], \\\"group_name\\\": \\\"RNA-Seq\\\"}, {\\\"__index__\\\": 4, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"Augustus\\\", \\\"__current_case__\\\": 5}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"GlimmerHMM\\\", \\\"__current_case__\\\": 5}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"SNAP\\\", \\\"__current_case__\\\": 5}}], \\\"group_name\\\": \\\"Gene prediction\\\"}]\", \"fasta_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"debug_mode\\\": \\\"\\\", \\\"__current_case__\\\": 1}\", \"genome_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}", 
-            "tool_version": "2.3.1", 
+            "tool_state": "{\"__page__\": 0, \"group\": \"[{\\\"__index__\\\": 0, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#8064a2\\\", \\\"bedChoice\\\": {\\\"BED_blat_alignment\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_blat_alignment_option\\\", \\\"__current_case__\\\": 5, \\\"database\\\": \\\"NCBI\\\"}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"BLAT Alignment\\\"}}], \\\"group_name\\\": \\\"BLAT Alignment\\\"}, {\\\"__index__\\\": 1, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#f79646\\\", \\\"bedChoice\\\": {\\\"BED_simple_repeats\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_simple_repeats_option\\\", \\\"__current_case__\\\": 2}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Simple repeat\\\"}}], \\\"group_name\\\": \\\"Simple repeats\\\"}, {\\\"__index__\\\": 2, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#4f81bd\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_blast_alignment_option\\\", \\\"BED_blast_alignment\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 4, \\\"database\\\": \\\"NCBI\\\"}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"BLAST Alignment\\\"}}], \\\"group_name\\\": \\\"Homology\\\"}, {\\\"__index__\\\": 3, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bam\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"BAM\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"longLabel\\\": \\\"HISAT sequence alignment\\\", \\\"__current_case__\\\": 0}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bigwig\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"longLabel\\\": \\\"RNA-Seq Coverage\\\", \\\"__current_case__\\\": 3, \\\"BIGWIG\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gtf\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"GTF\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 6, \\\"longLabel\\\": \\\"StringTie transcripts \\\"}}, {\\\"__index__\\\": 3, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_splice_junctions_option\\\", \\\"BED_splice_junctions\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 3}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Splice junctions\\\"}}], \\\"group_name\\\": \\\"RNA-Seq\\\"}, {\\\"__index__\\\": 4, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"Augustus\\\", \\\"__current_case__\\\": 5}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"GlimmerHMM\\\", \\\"__current_case__\\\": 5}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"SNAP\\\", \\\"__current_case__\\\": 5}}], \\\"group_name\\\": \\\"Gene prediction\\\"}]\", \"fasta_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"debug_mode\\\": \\\"\\\", \\\"__current_case__\\\": 1}\", \"genome_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "2.4.2", 
             "type": "tool", 
-            "uuid": "de4544b1-0901-44bd-81a7-4c6b0b6ab513", 
+            "uuid": "89e0d6a5-cdf3-4b00-acbd-6d61dbb57785", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "c3c23497-8096-4a45-a426-1656d8725250"
+                    "uuid": "885d0993-c30b-47cc-bf1a-00fc47b3ce2a"
                 }
             ]
         }
     }, 
-    "uuid": "855f5e18-4691-48d0-b94f-18025b18136b"
+    "uuid": "80b4aed9-96fa-4d26-97e1-e28a1a08147c"
 }
