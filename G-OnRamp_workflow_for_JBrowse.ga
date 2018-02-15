@@ -1281,7 +1281,7 @@
         }, 
         "22": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/jbrowsearchivecreator/jbrowse_hub/1.0.1", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/jbrowsearchivecreator/jbrowse_hub/2.0.1", 
             "id": 22, 
             "input_connections": {
                 "group_0|format_0|formatChoice|bedChoice|BigPsl": {
@@ -1355,7 +1355,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/jbrowsearchivecreator/jbrowse_hub/1.0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "e762f4b9e4bd", 
+                "changeset_revision": "237707a6b74d", 
                 "name": "jbrowsearchivecreator", 
                 "owner": "yating-l", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
