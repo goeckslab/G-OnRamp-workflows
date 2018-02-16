@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "G-OnRamp production workflow for Apollo", 
+    "name": "G-OnRamp production workflow for JBrowse/Apollo", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -355,8 +355,8 @@
                 }
             ], 
             "position": {
-                "left": 485.5, 
-                "top": 744
+                "left": 476.5, 
+                "top": 759
             }, 
             "post_job_actions": {}, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/windowmasker_2_5_0/windowmasker_mkcounts/1.0", 
@@ -964,8 +964,8 @@
                 }
             ], 
             "position": {
-                "left": 957.5, 
-                "top": 748
+                "left": 962.5, 
+                "top": 764
             }, 
             "post_job_actions": {}, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/windowmasker_2_5_0/windowmasker_ustat/1.0", 
@@ -1452,7 +1452,7 @@
             "outputs": [
                 {
                     "name": "output1", 
-                    "type": "blastxml"
+                    "type": "tabular"
                 }
             ], 
             "position": {
@@ -1595,7 +1595,7 @@
         }, 
         "28": {
             "annotation": "", 
-            "content_id": "testtoolshed.g2.bx.psu.edu/repos/yating-l/jbrowsearchivecreator/jbrowse_hub/2.0.0", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/jbrowsearchivecreator/jbrowse_hub/2.0.1", 
             "errors": null, 
             "id": 28, 
             "input_connections": {
@@ -1627,13 +1627,13 @@
                     "id": 19, 
                     "output_name": "output_bigwig"
                 }, 
-                "group_2|format_2|formatChoice|bedChoice|BED_splice_junctions": {
-                    "id": 21, 
-                    "output_name": "fixed_output"
-                }, 
-                "group_2|format_3|formatChoice|GTF": {
+                "group_2|format_2|formatChoice|GTF": {
                     "id": 20, 
                     "output_name": "output_gtf"
+                }, 
+                "group_2|format_3|formatChoice|bedChoice|BED_splice_junctions": {
+                    "id": 21, 
+                    "output_name": "fixed_output"
                 }, 
                 "group_3|format_0|formatChoice|GFF3": {
                     "id": 11, 
@@ -1675,32 +1675,32 @@
                 }
             ], 
             "position": {
-                "left": 1296, 
-                "top": 360.5
+                "left": 1643, 
+                "top": 355.5
             }, 
             "post_job_actions": {}, 
-            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/yating-l/jbrowsearchivecreator/jbrowse_hub/2.0.0", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/jbrowsearchivecreator/jbrowse_hub/2.0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "07cc5384dd61", 
+                "changeset_revision": "237707a6b74d", 
                 "name": "jbrowsearchivecreator", 
                 "owner": "yating-l", 
-                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+                "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"group\": \"[{\\\"__index__\\\": 0, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"blastxml\\\", \\\"track_color\\\": \\\"#4f81bd\\\", \\\"BlastXML\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"longLabel\\\": \\\"Blast Alignment\\\"}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#8064a2\\\", \\\"bedChoice\\\": {\\\"BED_blat_alignment\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_blat_alignment_option\\\", \\\"__current_case__\\\": 4}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Blat Alignment\\\"}}], \\\"group_name\\\": \\\"Homology\\\"}, {\\\"__index__\\\": 1, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#f79646\\\", \\\"bedChoice\\\": {\\\"BED_simple_repeats\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_simple_repeats_option\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Simple repeats\\\"}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#f79646\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_generic\\\", \\\"BED_generic\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Window masker\\\"}}], \\\"group_name\\\": \\\"Variants and Repeats\\\"}, {\\\"__index__\\\": 2, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bam\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"BAM\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"longLabel\\\": \\\"Sequence Alignment\\\", \\\"__current_case__\\\": 0}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bigwig\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"longLabel\\\": \\\"Sequence Coverage\\\", \\\"__current_case__\\\": 3, \\\"BIGWIG\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_splice_junctions_option\\\", \\\"BED_splice_junctions\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Splice junctions\\\"}}, {\\\"__index__\\\": 3, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gtf\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"GTF\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 5, \\\"longLabel\\\": \\\"Assembled Transcripts\\\"}}], \\\"group_name\\\": \\\"RNA-Seq\\\"}, {\\\"__index__\\\": 3, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"Augustus Gene Prediction\\\", \\\"__current_case__\\\": 4}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"GlimmerHMM Gene Prediction\\\", \\\"__current_case__\\\": 4}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"SNAP Gene Prediction\\\", \\\"__current_case__\\\": 4}}], \\\"group_name\\\": \\\"Gene predictions\\\"}, {\\\"__index__\\\": 4, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bigwig\\\", \\\"track_color\\\": \\\"#4bacc6\\\", \\\"longLabel\\\": \\\"GC percent \\\", \\\"__current_case__\\\": 3, \\\"BIGWIG\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#4bacc6\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_generic\\\", \\\"BED_generic\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"GAP\\\"}}], \\\"group_name\\\": \\\"Mapping and Sequencing\\\"}]\", \"fasta_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"debug_mode\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"genome_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}", 
-            "tool_version": "2.0.0", 
+            "tool_state": "{\"__page__\": null, \"group\": \"[{\\\"__index__\\\": 0, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"blastxml\\\", \\\"track_color\\\": \\\"#4f81bd\\\", \\\"BlastXML\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"longLabel\\\": \\\"Blast Alignment\\\"}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#8064a2\\\", \\\"bedChoice\\\": {\\\"BED_blat_alignment\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_blat_alignment_option\\\", \\\"__current_case__\\\": 4}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"BLAT Alignment\\\"}}], \\\"group_name\\\": \\\"Homology\\\"}, {\\\"__index__\\\": 1, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#f79646\\\", \\\"bedChoice\\\": {\\\"BED_simple_repeats\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_simple_repeats_option\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Simple Repeats\\\"}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#f79646\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_generic\\\", \\\"BED_generic\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"WindowMasker\\\"}}], \\\"group_name\\\": \\\"Variants and Repeats\\\"}, {\\\"__index__\\\": 2, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bam\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"BAM\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"longLabel\\\": \\\"Sequence Alignment\\\", \\\"__current_case__\\\": 0}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bigwig\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"longLabel\\\": \\\"Sequence Coverage\\\", \\\"__current_case__\\\": 3, \\\"BIGWIG\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gtf\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"GTF\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 5, \\\"longLabel\\\": \\\"Assembled Transcripts\\\"}}, {\\\"__index__\\\": 3, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_splice_junctions_option\\\", \\\"BED_splice_junctions\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Splice Junctions\\\"}}], \\\"group_name\\\": \\\"RNA-Seq\\\"}, {\\\"__index__\\\": 3, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"Augustus Gene Prediction\\\", \\\"__current_case__\\\": 4}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"GlimmerHMM Gene Prediction\\\", \\\"__current_case__\\\": 4}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"SNAP Gene Prediction\\\", \\\"__current_case__\\\": 4}}], \\\"group_name\\\": \\\"Gene Predictions\\\"}, {\\\"__index__\\\": 4, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bigwig\\\", \\\"track_color\\\": \\\"#4bacc6\\\", \\\"longLabel\\\": \\\"GC Percent \\\", \\\"__current_case__\\\": 3, \\\"BIGWIG\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#4bacc6\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_generic\\\", \\\"BED_generic\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"GAP\\\"}}], \\\"group_name\\\": \\\"Mapping and Sequencing\\\"}]\", \"fasta_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"debug_mode\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"genome_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "2.0.1", 
             "type": "tool", 
-            "uuid": "73572411-d7de-4761-90c0-dd93457fa477", 
+            "uuid": "e3eecd16-c9c3-46ed-8664-eb330601d482", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "b42b03d0-21c2-4321-9224-f508cf994494"
+                    "uuid": "091dd732-265e-4f43-bfc6-1c843176d83e"
                 }
             ]
         }, 
         "29": {
             "annotation": "", 
-            "content_id": "testtoolshed.g2.bx.psu.edu/repos/yating-l/jbrowsehubtoapollo/jbrowsehubtoapollo/1.0.0", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gonramp_apollo_tools/jbrowsehubtoapollo/1.0.0", 
             "errors": null, 
             "id": 29, 
             "input_connections": {
@@ -1709,24 +1709,7 @@
                     "output_name": "output"
                 }
             }, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool JBrowseHub To Apollo", 
-                    "name": "jbrowse_hub"
-                }, 
-                {
-                    "description": "runtime parameter for tool JBrowseHub To Apollo", 
-                    "name": "species_name"
-                }, 
-                {
-                    "description": "runtime parameter for tool JBrowseHub To Apollo", 
-                    "name": "admin_password"
-                }, 
-                {
-                    "description": "runtime parameter for tool JBrowseHub To Apollo", 
-                    "name": "admin_username"
-                }
-            ], 
+            "inputs": [], 
             "label": null, 
             "name": "JBrowseHub To Apollo", 
             "outputs": [
@@ -1736,29 +1719,29 @@
                 }
             ], 
             "position": {
-                "left": 1898.5, 
-                "top": 668.5
+                "left": 1639.5, 
+                "top": 1840.5
             }, 
             "post_job_actions": {}, 
-            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/yating-l/jbrowsehubtoapollo/jbrowsehubtoapollo/1.0.0", 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gonramp_apollo_tools/jbrowsehubtoapollo/1.0.0", 
             "tool_shed_repository": {
-                "changeset_revision": "8ff4b84d709f", 
-                "name": "jbrowsehubtoapollo", 
+                "changeset_revision": "ce4f91831680", 
+                "name": "gonramp_apollo_tools", 
                 "owner": "yating-l", 
-                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+                "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"jbrowse_hub\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"species_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"admin_username\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"debug_mode\\\": \\\"false\\\", \\\"port\\\": \\\"8080\\\", \\\"__current_case__\\\": 1}\", \"admin_password\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_state": "{\"__page__\": null, \"jbrowse_hub\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 166}]}\", \"species_name\": \"\\\"unknown\\\"\", \"__rerun_remap_job_id__\": null, \"admin_username\": \"\\\"\\\"\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"debug_mode\\\": \\\"false\\\", \\\"port\\\": \\\"8080\\\", \\\"__current_case__\\\": 1}\", \"admin_password\": \"\\\"\\\"\", \"action\": \"\\\"add\\\"\"}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
-            "uuid": "aba327d1-fdc7-4392-9b3d-40fe7d62f318", 
+            "uuid": "d0396bba-96af-4415-83b3-1720db12a1e8", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "428785a7-f453-4e3a-b5b8-bd9c9afc46f0"
+                    "uuid": "ce009680-24c3-4ea6-b845-3b714ba56910"
                 }
             ]
         }
     }, 
-    "uuid": "6a5f04ee-f401-447a-9a79-369e3e8c84b1"
+    "uuid": "a0aa438e-d888-473e-ba92-6ca1a046e195"
 }

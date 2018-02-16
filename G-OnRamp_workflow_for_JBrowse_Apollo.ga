@@ -1,0 +1,1421 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "G-OnRamp workflow for JBrowse/Apollo", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Genome sequence"
+                }
+            ], 
+            "label": "Reference genome", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 217, 
+                "top": 295
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Genome sequence\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "5ba31a84-7939-42a4-a236-2bdd203f5040", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "5fcf10e4-aba4-4167-b6ae-6b3d5c91281c"
+                }
+            ]
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "mRNA genBank records"
+                }
+            ], 
+            "label": "mRNA GenBank records", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 215.5, 
+                "top": 484
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"mRNA genBank records\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "9a5a4e9c-b772-4cc0-8bab-8631f7bdeada", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "dffa1e2e-970a-45dc-a8e2-a958f1f478dc"
+                }
+            ]
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Protein sequence"
+                }
+            ], 
+            "label": "Protein Query Sequence", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 213, 
+                "top": 578
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Protein sequence\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "54393b7b-9acd-4126-b63d-c86420cccd29", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "ed1f9118-1109-46e5-99c5-6d8ffeb8f8f4"
+                }
+            ]
+        }, 
+        "3": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "RNA-seq forward"
+                }
+            ], 
+            "label": "RNA-Seq: Forward reads", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 210, 
+                "top": 737
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"RNA-seq forward\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "522ec68a-50b3-4a1c-9916-4993c44e8119", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "ba34eae2-2852-4f10-a496-5419b6bcedc5"
+                }
+            ]
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "RNA-seq reverse"
+                }
+            ], 
+            "label": "RNA-Seq: Reverse reads", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 208, 
+                "top": 822
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"RNA-seq reverse\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "4d80a5d7-8fab-433e-929f-6d554910fe76", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "93d62103-ee99-4006-8619-243f7aa5f409"
+                }
+            ]
+        }, 
+        "5": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/rename_scaffolds/rename_scaffold/0.1.0", 
+            "errors": null, 
+            "id": 5, 
+            "input_connections": {
+                "input": {
+                    "id": 0, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool rename the scaffolds", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "rename the scaffolds", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "index", 
+                    "type": "fasta"
+                }
+            ], 
+            "position": {
+                "left": 397, 
+                "top": 450
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/rename_scaffolds/rename_scaffold/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "65c9ce351343", 
+                "name": "rename_scaffolds", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "090dabb4-1822-4b49-bc14-7c89bfc1a7a7", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "eba3f998-ac5c-489b-ac2c-d8e82c97d917"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "index", 
+                    "uuid": "68b6b805-3acb-44c8-be3e-4f8264c1c320"
+                }
+            ]
+        }, 
+        "6": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0", 
+            "errors": null, 
+            "id": 6, 
+            "input_connections": {
+                "gbfile": {
+                    "id": 1, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool gbToFasta", 
+                    "name": "gbfile"
+                }
+            ], 
+            "label": null, 
+            "name": "gbToFasta", 
+            "outputs": [
+                {
+                    "name": "outputfa", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "outputcds", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 407.5, 
+                "top": 323
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "b673449d111a", 
+                "name": "gbtofasta", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"gbfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cds\": \"\\\"yes\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "df633b35-e63d-4edd-acf5-6278ad3e3ad4", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "outputfa", 
+                    "uuid": "570b2606-c740-421e-9996-dcb21f1a0c1d"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "outputcds", 
+                    "uuid": "87e7f1cf-fb5d-42b5-b904-ea576a9b1741"
+                }
+            ]
+        }, 
+        "7": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.1.08", 
+            "errors": null, 
+            "id": 7, 
+            "input_connections": {
+                "input_file": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool NCBI BLAST+ makeblastdb", 
+                    "name": "mask_data_file"
+                }, 
+                {
+                    "description": "runtime parameter for tool NCBI BLAST+ makeblastdb", 
+                    "name": "input_file"
+                }
+            ], 
+            "label": null, 
+            "name": "NCBI BLAST+ makeblastdb", 
+            "outputs": [
+                {
+                    "name": "outfile", 
+                    "type": "data"
+                }
+            ], 
+            "position": {
+                "left": 614, 
+                "top": 327
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.1.08", 
+            "tool_shed_repository": {
+                "changeset_revision": "3034ce97dd33", 
+                "name": "ncbi_blast_plus", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"mask_data_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"dbtype\": \"\\\"nucl\\\"\", \"__rerun_remap_job_id__\": null, \"hash_index\": \"\\\"true\\\"\", \"tax\": \"{\\\"__current_case__\\\": 0, \\\"taxselect\\\": \\\"\\\"}\", \"title\": \"\\\"\\\"\", \"parse_seqids\": \"\\\"false\\\"\"}", 
+            "tool_version": "0.1.08", 
+            "type": "tool", 
+            "uuid": "b476cc64-ba76-41bc-9c42-559d0c31ab3e", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "outfile", 
+                    "uuid": "5ecf1e0d-e10b-4022-9c62-ba087ced4608"
+                }
+            ]
+        }, 
+        "8": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/augustus/augustus/3.1.0", 
+            "errors": null, 
+            "id": 8, 
+            "input_connections": {
+                "input_genome": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Augustus", 
+                    "name": "input_genome"
+                }, 
+                {
+                    "description": "runtime parameter for tool Augustus", 
+                    "name": "organism"
+                }
+            ], 
+            "label": null, 
+            "name": "Augustus", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "gtf"
+                }, 
+                {
+                    "name": "protein_output", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "codingseq_output", 
+                    "type": "fasta"
+                }
+            ], 
+            "position": {
+                "left": 606.5, 
+                "top": 515.5
+            }, 
+            "post_job_actions": {
+                "HideDatasetActioncodingseq_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "codingseq_output"
+                }, 
+                "HideDatasetActionprotein_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "protein_output"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/augustus/augustus/3.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "f5075dee9d6b", 
+                "name": "augustus", 
+                "owner": "bgruening", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"gff\": \"\\\"true\\\"\", \"__rerun_remap_job_id__\": null, \"organism\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"genemodel\": \"\\\"complete\\\"\", \"utr\": \"\\\"false\\\"\", \"noInFrameStop\": \"\\\"false\\\"\", \"outputs\": \"[\\\"protein\\\", \\\"codingseq\\\", \\\"cds\\\"]\", \"singlestrand\": \"\\\"false\\\"\", \"input_genome\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"strand\": \"\\\"both\\\"\"}", 
+            "tool_version": "3.1.0", 
+            "type": "tool", 
+            "uuid": "c0769225-05f7-4314-87d1-28c46fa57f87", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "193e647a-45e8-4fb8-ab14-3402915f3360"
+                }
+            ]
+        }, 
+        "9": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.1", 
+            "errors": null, 
+            "id": 9, 
+            "input_connections": {
+                "input_format|paired|reads_f": {
+                    "id": 3, 
+                    "output_name": "output"
+                }, 
+                "input_format|paired|reads_r": {
+                    "id": 4, 
+                    "output_name": "output"
+                }, 
+                "reference_genome|history_item": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool HISAT2", 
+                    "name": "reference_genome"
+                }
+            ], 
+            "label": null, 
+            "name": "HISAT2", 
+            "outputs": [
+                {
+                    "name": "output_alignments", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "output_unaligned_reads_l", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_unaligned_reads_r", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_aligned_reads_l", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_aligned_reads_r", 
+                    "type": "fastqsanger"
+                }
+            ], 
+            "position": {
+                "left": 475, 
+                "top": 717
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput_aligned_reads_l": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_aligned_reads_l"
+                }, 
+                "HideDatasetActionoutput_aligned_reads_r": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_aligned_reads_r"
+                }, 
+                "HideDatasetActionoutput_unaligned_reads_l": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_unaligned_reads_l"
+                }, 
+                "HideDatasetActionoutput_unaligned_reads_r": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_unaligned_reads_r"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "2ec097c8e843", 
+                "name": "hisat2", 
+                "owner": "iuc", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"alignment_options\": \"{\\\"__current_case__\\\": 0, \\\"alignment_options_selector\\\": \\\"defaults\\\"}\", \"max_seeds\": \"\\\"\\\"\", \"input_format\": \"{\\\"paired\\\": {\\\"aligned_file\\\": \\\"false\\\", \\\"unaligned_file\\\": \\\"false\\\", \\\"paired_end_options\\\": {\\\"paired_end_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}, \\\"paired_selector\\\": \\\"paired\\\", \\\"reads_f\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"reads_r\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, \\\"input_format_selector\\\": \\\"fastq\\\", \\\"__current_case__\\\": 1}\", \"__page__\": 0, \"max_primary\": \"\\\"5\\\"\", \"scoring_options\": \"{\\\"scoring_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"reference_genome\": \"{\\\"reference_genome_source\\\": \\\"history\\\", \\\"history_item\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1}\", \"spliced_options\": \"{\\\"spliced_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"paired_options\": \"{\\\"paired_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"input_options\": \"{\\\"input_options_selector\\\": \\\"defaults\\\", \\\"__current_case__\\\": 0}\", \"secondary\": \"\\\"false\\\"\"}", 
+            "tool_version": "2.0.5.1", 
+            "type": "tool", 
+            "uuid": "9b879bd4-a8e5-48ec-a679-f5808649a5e3", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_alignments", 
+                    "uuid": "b4f03935-6132-4e08-968a-94623241aafe"
+                }
+            ]
+        }, 
+        "10": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/multi_fasta_glimmer_hmm/multi_fasta_glimmerhmm/4.0", 
+            "errors": null, 
+            "id": 10, 
+            "input_connections": {
+                "input": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Multi Fasta GlimmerHMM", 
+                    "name": "trained_specie"
+                }, 
+                {
+                    "description": "runtime parameter for tool Multi Fasta GlimmerHMM", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Multi Fasta GlimmerHMM", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "gff3"
+                }
+            ], 
+            "position": {
+                "left": 791.5, 
+                "top": 533
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/multi_fasta_glimmer_hmm/multi_fasta_glimmerhmm/4.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "6618d16f276c", 
+                "name": "multi_fasta_glimmer_hmm", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"trained_specie\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "4.0", 
+            "type": "tool", 
+            "uuid": "f2b3c06f-f0b6-476d-b1dd-bef4cdced82b", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "7bd1f1c4-2fb6-476e-b8fb-648ca1548349"
+                }
+            ]
+        }, 
+        "11": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/trfbig/trfBig/0.1.0", 
+            "errors": null, 
+            "id": 11, 
+            "input_connections": {
+                "input": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool TrfBig", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "TrfBig", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "bed"
+                }
+            ], 
+            "position": {
+                "left": 257, 
+                "top": 997
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/trfbig/trfBig/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "ba819b65bef3", 
+                "name": "trfbig", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "a6200a59-3dcd-4c29-a494-13760bd12f2e", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "7e00bec9-b08f-464d-ae84-a64b423a6da9"
+                }
+            ]
+        }, 
+        "12": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/snap/snap/1.0", 
+            "errors": null, 
+            "id": 12, 
+            "input_connections": {
+                "input1": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Semi-HMM-based Nucleic Acid Parser (SNAP)", 
+                    "name": "organism"
+                }, 
+                {
+                    "description": "runtime parameter for tool Semi-HMM-based Nucleic Acid Parser (SNAP)", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Semi-HMM-based Nucleic Acid Parser (SNAP)", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "gff3"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "output3", 
+                    "type": "fasta"
+                }
+            ], 
+            "position": {
+                "left": 1005.5, 
+                "top": 499
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput2": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output2"
+                }, 
+                "HideDatasetActionoutput3": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output3"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/snap/snap/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "57299471d6c1", 
+                "name": "snap", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"settings\": \"{\\\"__current_case__\\\": 0, \\\"advanced\\\": \\\"simple\\\"}\", \"__rerun_remap_job_id__\": null, \"proteins\": \"\\\"\\\"\", \"transcripts\": \"\\\"\\\"\", \"organism\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "d7be726a-9154-4ef0-8e34-343b21dea0e1", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output1", 
+                    "uuid": "c7ea54c1-39df-4fb8-bdb5-77beb7a83c54"
+                }
+            ]
+        }, 
+        "13": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/1.0", 
+            "errors": null, 
+            "id": 13, 
+            "input_connections": {
+                "query": {
+                    "id": 6, 
+                    "output_name": "outputfa"
+                }, 
+                "reference_source|database": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool UCSC BLAT Alignment Tool", 
+                    "name": "query"
+                }, 
+                {
+                    "description": "runtime parameter for tool UCSC BLAT Alignment Tool", 
+                    "name": "reference_source"
+                }
+            ], 
+            "label": null, 
+            "name": "UCSC BLAT Alignment Tool", 
+            "outputs": [
+                {
+                    "name": "output_sorted", 
+                    "type": "psl"
+                }
+            ], 
+            "position": {
+                "left": 620.5, 
+                "top": 174
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "545bc7831814", 
+                "name": "ucsc_blat", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"query_type\": \"\\\"rnax\\\"\", \"__rerun_remap_job_id__\": null, \"database_type\": \"\\\"dnax\\\"\", \"noHead\": \"\\\"yes\\\"\", \"mask_type\": \"{\\\"mask\\\": \\\"lower\\\", \\\"__current_case__\\\": 0}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reference_source\": \"{\\\"reference_source_selector\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"database\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "5ef037a8-e72a-44bc-bf6b-0ccfe4bfdf0f", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_sorted", 
+                    "uuid": "b2e92cb5-75ce-4c5e-9e24-3d289ca64ca0"
+                }
+            ]
+        }, 
+        "14": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.1.08", 
+            "errors": null, 
+            "id": 14, 
+            "input_connections": {
+                "db_opts|histdb": {
+                    "id": 7, 
+                    "output_name": "outfile"
+                }, 
+                "query": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool NCBI BLAST+ tblastn", 
+                    "name": "db_opts"
+                }, 
+                {
+                    "description": "runtime parameter for tool NCBI BLAST+ tblastn", 
+                    "name": "query"
+                }
+            ], 
+            "label": null, 
+            "name": "NCBI BLAST+ tblastn", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "blastxml"
+                }
+            ], 
+            "position": {
+                "left": 879, 
+                "top": 329
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.1.08", 
+            "tool_shed_repository": {
+                "changeset_revision": "3034ce97dd33", 
+                "name": "ncbi_blast_plus", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"evalue_cutoff\": \"\\\"0.001\\\"\", \"__page__\": 0, \"adv_opts\": \"{\\\"adv_opts_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"db_opts\": \"{\\\"db_opts_selector\\\": \\\"histdb\\\", \\\"subject\\\": \\\"\\\", \\\"histdb\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"database\\\": \\\"\\\"}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"blast_type\": \"\\\"tblastn\\\"\", \"output\": \"{\\\"out_format\\\": \\\"5\\\", \\\"__current_case__\\\": 3}\"}", 
+            "tool_version": "0.1.08", 
+            "type": "tool", 
+            "uuid": "a442998f-b80c-4970-a2ca-8fe9e2c4020b", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output1", 
+                    "uuid": "2f9cb996-6e1e-4863-b25e-1630078fe3c5"
+                }
+            ]
+        }, 
+        "15": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/bamtobigwig/bam_to_bigwig/0.1.0", 
+            "errors": null, 
+            "id": 15, 
+            "input_connections": {
+                "input_bam": {
+                    "id": 9, 
+                    "output_name": "output_alignments"
+                }, 
+                "input_reference_fasta": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Convert Bam to BigWig", 
+                    "name": "input_reference_fasta"
+                }, 
+                {
+                    "description": "runtime parameter for tool Convert Bam to BigWig", 
+                    "name": "input_bam"
+                }
+            ], 
+            "label": null, 
+            "name": "Convert Bam to BigWig", 
+            "outputs": [
+                {
+                    "name": "output_bigwig", 
+                    "type": "bigwig"
+                }
+            ], 
+            "position": {
+                "left": 740.5, 
+                "top": 735.5
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/bamtobigwig/bam_to_bigwig/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "2e812b4f91ce", 
+                "name": "bamtobigwig", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input_reference_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"input_bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "0dc44638-b362-4131-89c0-eb0dee5cfd24", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_bigwig", 
+                    "uuid": "3059fedd-8c44-4033-aa7a-45390a79c14c"
+                }
+            ]
+        }, 
+        "16": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/regtools_junctions_extract/regtools_junctions_extract/0.1.0", 
+            "errors": null, 
+            "id": 16, 
+            "input_connections": {
+                "input1": {
+                    "id": 9, 
+                    "output_name": "output_alignments"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool regtools junctions extract", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "regtools junctions extract", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "bed"
+                }, 
+                {
+                    "name": "fixed_output", 
+                    "type": "bed"
+                }
+            ], 
+            "position": {
+                "left": 740, 
+                "top": 884.5
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/regtools_junctions_extract/regtools_junctions_extract/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "01ed8e112f2a", 
+                "name": "regtools_junctions_extract", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"max_intron_length\": \"\\\"500000\\\"\", \"__rerun_remap_job_id__\": null, \"min_intron_length\": \"\\\"20\\\"\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"__current_case__\\\": 1}\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "83be860f-36c7-4f3f-a8da-0ab8e7ddfa04", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "fixed_output", 
+                    "uuid": "2fe9229c-8121-436b-a1ea-26fcf7b1041b"
+                }
+            ]
+        }, 
+        "17": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie/1.3.3", 
+            "errors": null, 
+            "id": 17, 
+            "input_connections": {
+                "input_bam": {
+                    "id": 9, 
+                    "output_name": "output_alignments"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool StringTie", 
+                    "name": "input_bam"
+                }
+            ], 
+            "label": null, 
+            "name": "StringTie", 
+            "outputs": [
+                {
+                    "name": "output_gtf", 
+                    "type": "gtf"
+                }, 
+                {
+                    "name": "gene_abundance_estimation", 
+                    "type": "gtf"
+                }, 
+                {
+                    "name": "coverage", 
+                    "type": "gff3"
+                }, 
+                {
+                    "name": "exon_expression", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "intron_expression", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "transcript_expression", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "exon_transcript_mapping", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "intron_transcript_mapping", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "gene_counts", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "transcript_counts", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "legend", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 972, 
+                "top": 710
+            }, 
+            "post_job_actions": {
+                "HideDatasetActioncoverage": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "coverage"
+                }, 
+                "HideDatasetActionexon_expression": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "exon_expression"
+                }, 
+                "HideDatasetActionexon_transcript_mapping": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "exon_transcript_mapping"
+                }, 
+                "HideDatasetActiongene_abundance_estimation": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "gene_abundance_estimation"
+                }, 
+                "HideDatasetActionintron_expression": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "intron_expression"
+                }, 
+                "HideDatasetActionintron_transcript_mapping": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "intron_transcript_mapping"
+                }, 
+                "HideDatasetActiontranscript_expression": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "transcript_expression"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie/1.3.3", 
+            "tool_shed_repository": {
+                "changeset_revision": "6e45b443ef1f", 
+                "name": "stringtie", 
+                "owner": "iuc", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input_bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"option_set\": \"{\\\"options\\\": \\\"default\\\", \\\"__current_case__\\\": 0}\", \"guide\": \"{\\\"use_guide\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"__page__\": 0}", 
+            "tool_version": "1.3.3", 
+            "type": "tool", 
+            "uuid": "ea2a9ba7-e099-4f1c-adf5-cd68f0fb8944", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_gtf", 
+                    "uuid": "3f9607ee-5722-45f9-89fc-240b2e70ae49"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "transcript_counts", 
+                    "uuid": "d483eb17-971d-4bc7-a5eb-2f463506a51d"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "gene_counts", 
+                    "uuid": "4f37908e-3528-4cc8-b349-15a5a6b3c486"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "legend", 
+                    "uuid": "9fb9de6c-76e0-4a3b-9f2d-89103f2d04c0"
+                }
+            ]
+        }, 
+        "18": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslcdnafilter/ucsc_pslcdnafilter/1.0", 
+            "errors": null, 
+            "id": 18, 
+            "input_connections": {
+                "alignment": {
+                    "id": 13, 
+                    "output_name": "output_sorted"
+                }, 
+                "query": {
+                    "id": 6, 
+                    "output_name": "outputfa"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool UCSC pslCDnaFilter", 
+                    "name": "query"
+                }, 
+                {
+                    "description": "runtime parameter for tool UCSC pslCDnaFilter", 
+                    "name": "alignment"
+                }
+            ], 
+            "label": null, 
+            "name": "UCSC pslCDnaFilter", 
+            "outputs": [
+                {
+                    "name": "output_filtered", 
+                    "type": "psl"
+                }
+            ], 
+            "position": {
+                "left": 879.5, 
+                "top": 176
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslcdnafilter/ucsc_pslcdnafilter/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "ceec5a5fe894", 
+                "name": "ucsc_pslcdnafilter", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"assembly_type\": \"\\\"xeno\\\"\", \"__rerun_remap_job_id__\": null, \"alignment\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"assembly_category\": \"\\\"well-ordered\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "bfd896ea-822f-4d18-98d0-daf66a6c6060", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_filtered", 
+                    "uuid": "16499cd8-0b0b-4019-830d-e99edee566e1"
+                }
+            ]
+        }, 
+        "19": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslcheck/ucsc_pslcheck/1.0", 
+            "errors": null, 
+            "id": 19, 
+            "input_connections": {
+                "database": {
+                    "id": 5, 
+                    "output_name": "output"
+                }, 
+                "input_psl": {
+                    "id": 18, 
+                    "output_name": "output_filtered"
+                }, 
+                "query": {
+                    "id": 6, 
+                    "output_name": "outputfa"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool UCSC pslCheck", 
+                    "name": "query"
+                }, 
+                {
+                    "description": "runtime parameter for tool UCSC pslCheck", 
+                    "name": "input_psl"
+                }, 
+                {
+                    "description": "runtime parameter for tool UCSC pslCheck", 
+                    "name": "database"
+                }
+            ], 
+            "label": null, 
+            "name": "UCSC pslCheck", 
+            "outputs": [
+                {
+                    "name": "pass_psl", 
+                    "type": "psl"
+                }
+            ], 
+            "position": {
+                "left": 1061.5, 
+                "top": 171
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslcheck/ucsc_pslcheck/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "68f0da46b7e2", 
+                "name": "ucsc_pslcheck", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"query\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"input_psl\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"database\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "5d33d9ba-e1bc-4c15-b3a8-fcfd6a3a6642", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "pass_psl", 
+                    "uuid": "e457fcf2-2f15-4f6a-ba49-53c82d24a029"
+                }
+            ]
+        }, 
+        "20": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslpostarget/ucsc_pslpostarget/1.0", 
+            "errors": null, 
+            "id": 20, 
+            "input_connections": {
+                "input_psl": {
+                    "id": 19, 
+                    "output_name": "pass_psl"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool UCSC pslPosTarget", 
+                    "name": "input_psl"
+                }
+            ], 
+            "label": null, 
+            "name": "UCSC pslPosTarget", 
+            "outputs": [
+                {
+                    "name": "output_psl", 
+                    "type": "psl"
+                }
+            ], 
+            "position": {
+                "left": 1228, 
+                "top": 184
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_pslpostarget/ucsc_pslpostarget/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "fe51c5a974b5", 
+                "name": "ucsc_pslpostarget", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"input_psl\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "0187435b-8ba0-498f-8bff-e0730ce5d345", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_psl", 
+                    "uuid": "cde17ea0-618a-4ef6-a74e-279acde686a0"
+                }
+            ]
+        }, 
+        "21": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/psltobigpsl/pslToBigPsl/0.1.0", 
+            "errors": null, 
+            "id": 21, 
+            "input_connections": {
+                "add_input|input_cds": {
+                    "id": 6, 
+                    "output_name": "outputcds"
+                }, 
+                "add_input|input_fa": {
+                    "id": 6, 
+                    "output_name": "outputfa"
+                }, 
+                "input": {
+                    "id": 20, 
+                    "output_name": "output_psl"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool pslToBigPsl", 
+                    "name": "input"
+                }, 
+                {
+                    "description": "runtime parameter for tool pslToBigPsl", 
+                    "name": "add_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool pslToBigPsl", 
+                    "name": "add_input"
+                }
+            ], 
+            "label": null, 
+            "name": "pslToBigPsl", 
+            "outputs": [
+                {
+                    "name": "output_sorted", 
+                    "type": "bed"
+                }
+            ], 
+            "position": {
+                "left": 1227.5, 
+                "top": 303
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/psltobigpsl/pslToBigPsl/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "7cd07dd27927", 
+                "name": "psltobigpsl", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"add_input\": \"{\\\"input_type\\\": \\\"both\\\", \\\"input_fa\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"input_cds\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "6680025f-195d-495c-96b1-0a05dbbddeb1", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_sorted", 
+                    "uuid": "cd0ab985-8253-49fa-8772-fe4a0e6086dd"
+                }
+            ]
+        }, 
+        "22": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/jbrowsearchivecreator/jbrowse_hub/2.0.1", 
+            "errors": null, 
+            "id": 22, 
+            "input_connections": {
+                "fasta_file": {
+                    "id": 5, 
+                    "output_name": "output"
+                }, 
+                "group_0|format_0|formatChoice|bedChoice|BED_simple_repeats": {
+                    "id": 11, 
+                    "output_name": "output"
+                }, 
+                "group_1|format_0|formatChoice|BlastXML": {
+                    "id": 14, 
+                    "output_name": "output1"
+                }, 
+                "group_1|format_1|formatChoice|bedChoice|BED_blat_alignment": {
+                    "id": 21, 
+                    "output_name": "output_sorted"
+                }, 
+                "group_2|format_0|formatChoice|BAM": {
+                    "id": 9, 
+                    "output_name": "output_alignments"
+                }, 
+                "group_2|format_1|formatChoice|BIGWIG": {
+                    "id": 15, 
+                    "output_name": "output_bigwig"
+                }, 
+                "group_2|format_2|formatChoice|GTF": {
+                    "id": 17, 
+                    "output_name": "output_gtf"
+                }, 
+                "group_2|format_3|formatChoice|bedChoice|BED_splice_junctions": {
+                    "id": 16, 
+                    "output_name": "fixed_output"
+                }, 
+                "group_3|format_0|formatChoice|GFF3": {
+                    "id": 8, 
+                    "output_name": "output"
+                }, 
+                "group_3|format_1|formatChoice|GFF3": {
+                    "id": 10, 
+                    "output_name": "output"
+                }, 
+                "group_3|format_2|formatChoice|GFF3": {
+                    "id": 12, 
+                    "output_name": "output1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool JBrowse Archive Creator", 
+                    "name": "genome_name"
+                }, 
+                {
+                    "description": "runtime parameter for tool JBrowse Archive Creator", 
+                    "name": "fasta_file"
+                }
+            ], 
+            "label": null, 
+            "name": "JBrowse Archive Creator", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "jbrowsehub"
+                }
+            ], 
+            "position": {
+                "left": 1448, 
+                "top": 435.5
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/jbrowsearchivecreator/jbrowse_hub/2.0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "237707a6b74d", 
+                "name": "jbrowsearchivecreator", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"group\": \"[{\\\"__index__\\\": 0, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#daa520\\\", \\\"bedChoice\\\": {\\\"BED_simple_repeats\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_simple_repeats_option\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Simple Repeats\\\"}}], \\\"group_name\\\": \\\"Simple repeats\\\"}, {\\\"__index__\\\": 1, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"blastxml\\\", \\\"track_color\\\": \\\"#4f81bd\\\", \\\"BlastXML\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"longLabel\\\": \\\"Blast Alignment\\\"}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#8064a2\\\", \\\"bedChoice\\\": {\\\"BED_blat_alignment\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"bed_select\\\": \\\"bed_blat_alignment_option\\\", \\\"__current_case__\\\": 4}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"BLAT Alignment\\\"}}], \\\"group_name\\\": \\\"Homology\\\"}, {\\\"__index__\\\": 2, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bam\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"BAM\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"longLabel\\\": \\\"Sequence Alignment\\\", \\\"__current_case__\\\": 0}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bigwig\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"longLabel\\\": \\\"Sequence Coverage\\\", \\\"__current_case__\\\": 3, \\\"BIGWIG\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gtf\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"GTF\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 5, \\\"longLabel\\\": \\\"Assembled Transcripts\\\"}}, {\\\"__index__\\\": 3, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"bed\\\", \\\"track_color\\\": \\\"#c0504d\\\", \\\"bedChoice\\\": {\\\"bed_select\\\": \\\"bed_splice_junctions_option\\\", \\\"BED_splice_junctions\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2}, \\\"__current_case__\\\": 1, \\\"longLabel\\\": \\\"Splice Junctions\\\"}}], \\\"group_name\\\": \\\"RNA-Seq\\\"}, {\\\"__index__\\\": 3, \\\"format\\\": [{\\\"__index__\\\": 0, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"Augustus Gene Prediction\\\", \\\"__current_case__\\\": 4}}, {\\\"__index__\\\": 1, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"GlimmerHMM Gene Prediction\\\", \\\"__current_case__\\\": 4}}, {\\\"__index__\\\": 2, \\\"formatChoice\\\": {\\\"format_select\\\": \\\"gff3\\\", \\\"GFF3\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"track_color\\\": \\\"#9bbb59\\\", \\\"longLabel\\\": \\\"SNAP Gene Prediction\\\", \\\"__current_case__\\\": 4}}], \\\"group_name\\\": \\\"Gene prediction\\\"}]\", \"fasta_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"debug_mode\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"genome_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "2.0.1", 
+            "type": "tool", 
+            "uuid": "520175b0-c878-4fca-9e9e-1baeb1979b60", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "2d0699c9-c06d-40ba-a8d7-caa558eaed10"
+                }
+            ]
+        }, 
+        "23": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gonramp_apollo_tools/jbrowsehubtoapollo/1.0.0", 
+            "errors": null, 
+            "id": 23, 
+            "input_connections": {
+                "jbrowse_hub": {
+                    "id": 22, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "JBrowseHub To Apollo", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "html"
+                }
+            ], 
+            "position": {
+                "left": 1506.5, 
+                "top": 1000.5
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/yating-l/gonramp_apollo_tools/jbrowsehubtoapollo/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "ce4f91831680", 
+                "name": "gonramp_apollo_tools", 
+                "owner": "yating-l", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"jbrowse_hub\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 166}]}\", \"species_name\": \"\\\"unknown\\\"\", \"__rerun_remap_job_id__\": null, \"admin_username\": \"\\\"\\\"\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"off\\\", \\\"debug_mode\\\": \\\"false\\\", \\\"port\\\": \\\"8080\\\", \\\"__current_case__\\\": 1}\", \"admin_password\": \"\\\"\\\"\", \"action\": \"\\\"add\\\"\"}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "625fe8fa-81a5-475e-84a1-c2c4feef44a4", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "2d9ab4f5-b19a-4951-92e5-487d0a55f1f7"
+                }
+            ]
+        }
+    }, 
+    "uuid": "2e88a71e-f091-4108-924c-49263033e216"
+}
